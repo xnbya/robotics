@@ -37,7 +37,7 @@ void bblSort(int inarr[], int elements) {
 int main(){
 
 	int elements = 5;
-	int intarr[5] = {101,18,3,1,9};
+	int intarr[5] = {5, 2, 3, 4, 1};
 	bblSort(intarr, elements);
 	drive_goto(GAPS*2, GAPS*2);
 	drive_goto(51,0);

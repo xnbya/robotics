@@ -17,17 +17,23 @@ void pushStack(struct stack *inStack, int item) {
 	inStack->disks[inStack->ptr] = item;
 }
 
-void printTowers(struct stack *towers[],int size) {
+void printTowers(struct stack towers[],int size) {
 	int i, j;
+	printf("A \tB \tC \n");
 	for(i = size; i >= 0; i--) {
 		for(j = 0; j < 3; j++) {
-			if(*towers[j].ptr >= i)
-				printf("%d \t", *towers[j].disks[i]);
+			if(towers[j].ptr >= i)
+				printf("%d \t", towers[j].disks[i]);
 			else
 				printf("| \t");
 		}
 		printf("\n");
 	}
+	printf("\n");
+}
+
+void moveS(struct stack *A, struct stack *B) {
+	pushStack(A, popStack(B));
 }
 
 int main() {
@@ -47,8 +53,16 @@ int main() {
 	for(i = size; i > 0; i--) {
 		pushStack(&towers[aTower], i);
 	}
+	printTowers(towers, size);
 	//solve
-	printTowers(*towers, size);
+	while(towers[aTower].ptr > 0) {
+		moveS(&towers[bTower], &towers[aTower]);
+		printTowers(towers, size);
+		moveS(&towers[cTower], &towers[aTower]);
+		printTowers(towers, size);
+		moveS(&towers[cTower], &towers[bTower]);
+		printTowers(towers, size);
+	}
 	return 0;
 }
 	

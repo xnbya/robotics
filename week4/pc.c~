@@ -4,8 +4,16 @@
 
 struct stack {
 	int disks[maxtower]; 
+	int prev[maxtower];
 	int ptr;
 };
+
+
+struct stack towers[3];
+int size = 4;
+int prevA = -1;
+int prevB = -1;
+int order[3] = {0, 1, 2};
 
 int popStack(struct stack *inStack) {
 	inStack->ptr--;
@@ -17,52 +25,70 @@ void pushStack(struct stack *inStack, int item) {
 	inStack->disks[inStack->ptr] = item;
 }
 
+
 void printTowers(struct stack towers[],int size) {
 	int i, j;
 	printf("A \tB \tC \n");
 	for(i = size; i >= 0; i--) {
 		for(j = 0; j < 3; j++) {
-			if(towers[j].ptr >= i)
-				printf("%d \t", towers[j].disks[i]);
+			if(towers[order[j]].ptr >= i)
+				printf("%d \t", towers[order[j]].disks[i]);
 			else
 				printf("| \t");
 		}
-		printf("\n\n");
+		printf("\n");
 	}
+	printf("\n");
 }
 
-void moveS(struct stack *A, struct stack *B) {
-	pushStack(A, popStack(B));
+//move top from stack A to B
+void moveS(int A, int B) {
+	pushStack(&towers[B], popStack(&towers[A]));
+	towers[B].prev[towers[B].ptr] = A;
+	printTowers(towers, size);
+	prevA = A;
+	prevB = B;
 }
 
 int main() {
 	//set parameters
-	int size = 5;
 	char start = 'A';
+	
 	//setup the towers
-	int i;
-	struct stack towers[3];
-	int aTower = start - 'A';
-	int bTower = aTower + 1 % 3;
-	int cTower = bTower + 1 % 3;
+	int i, j;
+	for(i = 0; i < 3; i++) {
+		order[i] = (order[i] + start - 'A') % 3;
+	}
 	for(i = 0; i < 3; i++) {
 		towers[i].ptr = -1;
 	}
 	//add the discs
-	for(i = size; i > 0; i--) {
-		pushStack(&towers[aTower], i);
+	for(i = 1; i <= size; i++) {
+		pushStack(&towers[0], i);
+		towers[0].prev[i] = -1;
 	}
 	printTowers(towers, size);
-	//solve
-	while(towers[aTower].ptr > 0) {
-		moveS(&towers[bTower], &towers[aTower]);
-		printTowers(towers, size);
-		moveS(&towers[cTower], &towers[aTower]);
-		printTowers(towers, size);
-		moveS(&towers[cTower], &towers[bTower]);
-		printTowers(towers, size);
+	if(size%2)
+		moveS(0, 2);
+	else
+		moveS(0, 1);
+	while(towers[2].ptr <= size - 2) {
+		for(i = 0; i < 3; i++) {
+			for(j = 0; j < 3; j++) {
+				if((towers[j].ptr > -1) 
+						&& (i != towers[j].prev[towers[j].ptr])
+						&& (( (towers[i].disks[towers[i].ptr]%2 != towers[j].disks[towers[j].ptr]%2) 
+				 		&& (towers[i].disks[towers[i].ptr] < towers[j].disks[towers[j].ptr])) || towers[i].ptr == -1) ) {
+						moveS(j, i);
+						j = i = 5;
+				}
+			}
+		}
 	}
+				
+
 	return 0;
+
 }
 	
 

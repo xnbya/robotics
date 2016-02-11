@@ -1,11 +1,13 @@
 #include "simpletools.h"
 
+//print out the array
 void pprint(int intarr[], int elements) {
 	int i;
 	for(i = 0; i < elements; i++)
 		printf("%d \t", intarr[i]);
 }
 
+//carry out a bubble sort
 void bblSort(int inarr[], int elements) {
 	int i, end, z;
 	for(end = elements - 1; end >= 0; end--) {

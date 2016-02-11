@@ -1,4 +1,5 @@
-#include "simpletools.h"
+#include "stdio.h"
+#include "stdlib.h"
 
 void pprint(int intarr[], int elements) {
 	int i;
@@ -16,9 +17,38 @@ void bblSort(int inarr[], int elements) {
 				inarr[i] = inarr[i + 1];
 				inarr[i + 1] = z;
 			}
+			//Q2
+			pprint(inarr, elements);
+			printf("\n");
 		}
 	}
 }
+
+void bogoSort(int inarr[], int elements) {
+	int i, end, z;
+	int sorted = 0;
+	while(!sorted) {
+		for(end = elements - 2; end >= 0; end--) {
+			if(rand() % 2) {
+				//swap them
+				z = inarr[end];
+				inarr[end] = inarr[end + 1];
+				inarr[end + 1] = z;
+			}
+		}
+		sorted = 1;
+		for(i = 0; i < elements - 1; i++) {
+			if(inarr[i] > inarr[i+1])
+				sorted = 0;
+		}
+			//Q2
+			pprint(inarr, elements);
+			printf("\n");
+	}
+}
+
+
+
 
 
 
@@ -35,9 +65,9 @@ int main(){
 	}
 	pprint(intarr, elements);
 	printf("\n sorting \n");
-	bblSort(intarr, elements);
+	bogoSort(intarr, elements);
 	pprint(intarr, elements);
-	printf(" done \n");
+	return 0;
 }
 
 

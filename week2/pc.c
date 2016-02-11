@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include "stdlib.h"
 
 void pprint(int intarr[], int elements) {
 	int i;
@@ -23,6 +24,35 @@ void bblSort(int inarr[], int elements) {
 	}
 }
 
+void bogoSort(int inarr[], int elements) {
+	int i, end, z;
+	int sorted = 0;
+	int steps = 0;
+	while(!sorted) {
+		steps++;
+		for(end = elements - 2; end >= 0; end--) {
+			if(rand() % 2) {
+				//swap them
+				z = inarr[end];
+				inarr[end] = inarr[end + 1];
+				inarr[end + 1] = z;
+			}
+		}
+		sorted = 1;
+		for(i = 0; i < elements - 1; i++) {
+			if(inarr[i] > inarr[i+1])
+				sorted = 0;
+		}
+			//Q2
+			pprint(inarr, elements);
+			printf("\n");
+	}
+	printf("%d steps taken \n", steps);
+}
+
+
+
+
 
 
 int main(){
@@ -38,7 +68,7 @@ int main(){
 	}
 	pprint(intarr, elements);
 	printf("\n sorting \n");
-	bblSort(intarr, elements);
+	bogoSort(intarr, elements);
 	pprint(intarr, elements);
 	return 0;
 }

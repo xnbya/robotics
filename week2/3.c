@@ -3,7 +3,7 @@
 
 #define GAPS 63
 
-
+//bubble sort
 void bblSort(int inarr[], int elements) {
 	int i, end, z;
 	for(end = elements - 1; end >= 0; end--) {

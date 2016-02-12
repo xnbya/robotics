@@ -1,6 +1,9 @@
-#include <stdio.h>
+#include "simpletools.h"
+#include "abdrive.h"
+
 
 #define maxtower 50
+#define GAPS 63
 
 struct stack {
 	int disks[maxtower]; 
@@ -13,6 +16,9 @@ struct stack towers[3];
 int size = 4;
 int order[3] = {0, 1, 2};
 
+//current location of robot
+int location = 0;
+
 int popStack(struct stack *inStack) {
 	inStack->ptr--;
 	return inStack->disks[inStack->ptr+1];
@@ -23,37 +29,28 @@ void pushStack(struct stack *inStack, int item) {
 	inStack->disks[inStack->ptr] = item;
 }
 
-
-void printTowers(struct stack towers[],int size) {
-	int i, j;
-	printf("A \tB \tC \n");
-	for(i = size; i >= 0; i--) {
-		for(j = 0; j < 3; j++) {
-			if(towers[order[j]].ptr >= i)
-				printf("%d \t", towers[order[j]].disks[i]);
-			else
-				printf("| \t");
-		}
-		printf("\n");
-	}
-	printf("\n");
-}
-
 //move top from stack A to B
 void moveS(int A, int B) {
 	pushStack(&towers[B], popStack(&towers[A]));
 	towers[B].prev[towers[B].ptr] = A;
-	printTowers(towers, size);
+	int from = order[A];
+	int to = order[B];
+	//show movement
+	drive_goto((from - location) * GAPS, (from - location) * GAPS);
+	location += (from - location);
+	//switch on led
+	high(26);
+	drive_goto((to - location) * GAPS, (to - location) * GAPS);
+	location += (to - location);
+	low(26);
+
 }
 
 int main() {
 	//set parameters
 	char start = 'B';
-	printf("Enter the start: A,B or C\n");
-	scanf("%c", &start);
-	printf("Enter number of discs\n");
-	scanf("%d", &size);
-	
+	size = 3;
+
 	switch(start) {
 		case 'B':
 			order[1] = 0;

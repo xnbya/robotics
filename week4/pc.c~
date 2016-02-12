@@ -11,8 +11,6 @@ struct stack {
 
 struct stack towers[3];
 int size = 4;
-int prevA = -1;
-int prevB = -1;
 int order[3] = {0, 1, 2};
 
 int popStack(struct stack *inStack) {
@@ -46,19 +44,28 @@ void moveS(int A, int B) {
 	pushStack(&towers[B], popStack(&towers[A]));
 	towers[B].prev[towers[B].ptr] = A;
 	printTowers(towers, size);
-	prevA = A;
-	prevB = B;
 }
 
 int main() {
 	//set parameters
-	char start = 'A';
+	char start = 'B';
+	printf("Enter the start: A,B or C\n");
+	scanf("%c", &start);
+	printf("Enter number of discs\n");
+	scanf("%d", &size);
 	
+	switch(start) {
+		case 'B':
+			order[1] = 0;
+			order[0] = 1;
+			break;
+		case 'C':
+			order[2] = 0;
+			order[0] = 2;
+			break;
+	}
 	//setup the towers
 	int i, j;
-	for(i = 0; i < 3; i++) {
-		order[i] = (order[i] + start - 'A') % 3;
-	}
 	for(i = 0; i < 3; i++) {
 		towers[i].ptr = -1;
 	}

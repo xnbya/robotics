@@ -5,6 +5,8 @@
 #define maxtower 50
 #define GAPS 63
 
+//Alexis Enston - Towers of Hanoi + motor
+
 struct stack {
 	int disks[maxtower]; 
 	int prev[maxtower];
@@ -48,7 +50,7 @@ void moveS(int A, int B) {
 
 int main() {
 	//set parameters
-	char start = 'B';
+	char start = 'A';
 	size = 3;
 
 	switch(start) {

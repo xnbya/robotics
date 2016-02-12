@@ -75,10 +75,6 @@ int main() {
 		towers[0].prev[i] = -1;
 	}
 	printTowers(towers, size);
-	if(size%2)
-		moveS(0, 2);
-	else
-		moveS(0, 1);
 	while(towers[2].ptr <= size - 2) {
 		for(i = 0; i < 3; i++) {
 			for(j = 0; j < 3; j++) {

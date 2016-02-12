@@ -2,6 +2,8 @@
 
 #define maxtower 50
 
+//Alexis Enston - towers of hanoi
+
 struct stack {
 	int disks[maxtower]; 
 	int prev[maxtower];

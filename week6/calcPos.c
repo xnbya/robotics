@@ -1,15 +1,13 @@
 #include "simpletools.h"
 #include "abdrive.h"
 #include <math.h>
-#include "dimensions.h"
 #define M_PI 3.1415
-#define WHEEL_DIAMETER_CM 6.62
-#define ROBOT_WIDTH_CM 10.58
+#include "dimensions.h"
 
 
 float total_distance;
 float angleTurned;
-int DO = 22, CLK = 23, DI = 24, CS = 25;
+
 
 struct location{
 	float x;
@@ -37,7 +35,7 @@ void calcPosition(){
   float rad_turn;
 	
 	
-	sd_mount(DO, CLK, DI, CS);
+	sd_mount(22, 23, 24, 25);
 	FILE* fp = fopen("Position.text", "w");
 	
 	wheelRevCount = (M_PI * WHEEL_DIAMETER_CM)/360.0;
@@ -65,10 +63,10 @@ void calcPosition(){
 		
        // to limit it from +PI to -PI
 		while(current_pos.theta > M_PI){
-			current_pos.theta = current_pos.theta - (2.0 * M_PI);
+			current_pos.theta -= (2.0 * M_PI);
 		}
 		while(current_pos.theta < -1 * M_PI){
-			current_pos.theta = current_pos.theta + (2.0 * M_PI);
+			current_pos.theta += (2.0 * M_PI);
 		}
 	
 	}

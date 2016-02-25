@@ -1,13 +1,15 @@
 #include "simpletools.h"
 #include "abdrive.h"
 #include <math.h>
-#include <unistd.h>
 #include "dimensions.h"
 #define M_PI 3.1415
+#define WHEEL_DIAMETER_CM 6.62
+#define ROBOT_WIDTH_CM 10.58
 
-int DO = 22, CLK = 23, DI = 24, CS = 25; 
+
 float total_distance;
 float angleTurned;
+int DO = 22, CLK = 23, DI = 24, CS = 25;
 
 struct location{
 	float x;
@@ -16,6 +18,7 @@ struct location{
 };
 
 struct location current_pos;
+
 
 void init(){
 	current_pos.x = 0.0;
@@ -31,7 +34,7 @@ void calcPosition(){
 	float difference;
 	float wheelRevCount;
 	int l_encoder = 0, r_encoder = 0;
-        float rad_turn;
+  float rad_turn;
 	
 	
 	sd_mount(DO, CLK, DI, CS);
@@ -77,10 +80,13 @@ void calcPosition(){
 	
 	fp = fopen("Position.text", "r");
 	fread(&total_distance, 5, 1, fp);
-	print("distance travelled is %.2f\n",total_distance);
+	//print("distance travelled is %.2f\n",total_distance);
 	fread(&angleTurned, 5, 1, fp);
-	print("distance travelled is %.2f\n",angleTurned);
+	//print("distance travelled is %.2f\n",angleTurned);
 	fclose(fp);
 	
 	//print("total distance travelled is %.2f cm at an angle of %.2f degrees",total_distance,angleTurned);
 }
+int main(){
+  return 0;
+}  

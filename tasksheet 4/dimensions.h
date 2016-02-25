@@ -1,0 +1,2 @@
+#define WHEEL_DIAMETER_CM 6.62
+#define ROBOT_WIDTH_CM 10.58

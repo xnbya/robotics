@@ -24,12 +24,12 @@ void calcPosition(){
 	float current_cos;
 	float current_sin;
 	float difference;
-	float rev_count;
+	float wheelRevCount;
 	int l_encoder = 0, r_encoder = 0;
 	float total_distance;
 	float angleTurned;
 	
-	rev_count = (M_PI * WHEEL_DIAMETER_CM)/360.0;
+	wheelRevCount = (M_PI * WHEEL_DIAMETER_CM)/360.0;
 	
 	drive_getTicks(&l_encoder,&r_encoder);
 	l_dist = (float)l_encoder * rev_count;
@@ -52,7 +52,7 @@ void calcPosition(){
 		
 		current_pos.theta += difference / ROBOT_WIDTH_CM;
 		
-       // to limit it from +PI to -PI
+          // to limit it from +PI to -PI
 		while(current_pos.theta > M_PI){
 			current_pos.theta = current_pos.theta - (2.0 * M_PI);
 		}

@@ -7,7 +7,7 @@
 
 int DO = 22, CLK = 23, DI = 24, CS = 25; 
 float total_distance;
-	float angleTurned;
+float angleTurned;
 
 struct location{
 	float x;
@@ -31,7 +31,7 @@ void calcPosition(){
 	float difference;
 	float wheelRevCount;
 	int l_encoder = 0, r_encoder = 0;
-  float rad_turn;
+        float rad_turn;
 	
 	
 	sd_mount(DO, CLK, DI, CS);

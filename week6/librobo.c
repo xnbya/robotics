@@ -54,18 +54,18 @@ void followWall(int irOut, int irIn, int distance, int led) {
 	while(!stopDead(distance)) {
 		//read IR
 		dist = ledDist(irOut, irIn, led);
-		print("dist = %d \n", dist);
+		//print("dist = %d \n", dist);
 		lerror = dist - TARGET;
 		change = PROPGAIN * lerror; //proportional term
-		print("propgain = %d \n", change);
+		//print("propgain = %d \n", change);
 		change += integralTerm(dist);
-		print("int = %d \n", integralTerm(dist));
+		//print("int = %d \n", integralTerm(dist));
 		int diff = diffTerm(lerror);
-		print("diff term = %d \n", diff);
+		//print("diff term = %d \n", diff);
 		change += diff;
 
 		change = change / CHANGEDIV;
-		printf("change %d \n", change);
+		//printf("change %d \n", change);
 
 
 
@@ -74,8 +74,8 @@ void followWall(int irOut, int irIn, int distance, int led) {
 		drive_speed(STARTSPEED - change, STARTSPEED + change);
 		//drive_speed(20,20);
 
-		//init();
-		//calcPosition();
+		init();
+		calcPosition();
 		pause(100);
 	}
 	drive_speed(0,0);

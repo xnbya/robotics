@@ -5,12 +5,12 @@
 #include "calcPos.h"
 
 #define MAXCHANGE 20
-#define STARTSPEED 20
+#define STARTSPEED 60
 #define PROPGAIN 50
-#define INTGAIN 5
-#define DIFFGAIN 50
-#define TARGET 25
-#define CHANGEDIV 50
+#define INTGAIN 4
+#define DIFFGAIN 30
+#define TARGET 24
+#define CHANGEDIV 20
 
 //detect if something is dead in front, return 1 if it is
 int stopDead(int distance) {
@@ -51,6 +51,14 @@ void followWall(int irOut, int irIn, int distance, int led) {
 	totalerror = 0;
 	int dist, change, lerror;
 	int prev = 0;
+	//calibrate robot
+	int totaldist = 0;
+	for(int i = 0; i < 10; i++) { 
+		dist += ledDist(irOut, irIn, led);
+		pause(50);
+	}
+	//distance = totaldist / 10;
+	print("dist = %d \n", totaldist);
 	while(!stopDead(distance)) {
 		//read IR
 		dist = ledDist(irOut, irIn, led);
@@ -62,12 +70,17 @@ void followWall(int irOut, int irIn, int distance, int led) {
 		print("int = %d \n", integralTerm(dist));
 		int diff = diffTerm(lerror);
 		print("diff term = %d \n", diff);
-		change += diff;
+		change -= diff;
 
 		change = change / CHANGEDIV;
 		printf("change %d \n", change);
 
-
+		if(change > MAXCHANGE) {
+			change = MAXCHANGE;
+		}
+		if(change < -MAXCHANGE) {
+			change = -MAXCHANGE;
+		}
 
 
 
@@ -76,7 +89,7 @@ void followWall(int irOut, int irIn, int distance, int led) {
 
 		//init();
 		//calcPosition();
-		pause(100);
+		pause(50);
 	}
 	drive_speed(0,0);
 }

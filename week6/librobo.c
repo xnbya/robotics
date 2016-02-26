@@ -5,11 +5,11 @@
 #include "calcPos.h"
 
 #define MAXCHANGE 20
-#define STARTSPEED 40
+#define STARTSPEED 20
 #define PROPGAIN 50
 #define INTGAIN 5
 #define DIFFGAIN 50
-#define TARGET 18
+#define TARGET 25
 #define CHANGEDIV 50
 
 //detect if something is dead in front, return 1 if it is
@@ -25,7 +25,7 @@ int stopDead(int distance) {
 int ledDist(int irOut, int irIn, int led) {
 	int dist = 0;
 	int i;
-	for(i = 0; i < 240; i += 8) {
+	for(i = 0; i < 260; i += 8) {
 		dac_ctr(led, 0, i);
 		freqout(irOut, 1, 38000);
 		dist += input(irIn);
@@ -40,27 +40,27 @@ int integralTerm(int dist) {
 	return totalerror * INTGAIN;
 }
 
-int diffTerm(int error) {
-	int diff = preverror - error;
-	preverror = error;
+int diffTerm(int lerror) {
+	int diff = preverror - lerror;
+	preverror = lerror;
 	return diff * DIFFGAIN;
 }
 
 void followWall(int irOut, int irIn, int distance, int led) {
 	//init();
 	totalerror = 0;
-	int dist, change, error;
+	int dist, change, lerror;
 	int prev = 0;
 	while(!stopDead(distance)) {
 		//read IR
 		dist = ledDist(irOut, irIn, led);
 		print("dist = %d \n", dist);
-		error = dist - TARGET;
-		change = PROPGAIN * error; //proportional term
+		lerror = dist - TARGET;
+		change = PROPGAIN * lerror; //proportional term
 		print("propgain = %d \n", change);
 		change += integralTerm(dist);
 		print("int = %d \n", integralTerm(dist));
-		int diff = diffTerm(error);
+		int diff = diffTerm(lerror);
 		print("diff term = %d \n", diff);
 		change += diff;
 
@@ -84,9 +84,3 @@ void followWall(int irOut, int irIn, int distance, int led) {
 void followLeftWall() {
 	followWall(11, 10, 5, 26);
 }
-
-
-
-
-
-

@@ -35,8 +35,8 @@ void calcPosition(){
   float rad_turn;
 	
 	
-	sd_mount(22, 23, 24, 25);
-	FILE* fp = fopen("Position.text", "w");
+//	sd_mount(22, 23, 24, 25);
+//	FILE* fp = fopen("Position.text", "w");
 	
 	wheelRevCount = (M_PI * WHEEL_DIAMETER_CM)/360.0;
 	

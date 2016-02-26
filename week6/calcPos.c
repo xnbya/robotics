@@ -72,11 +72,11 @@ void calcPosition(){
 	}
 	total_distance = sqrt(pow(current_pos.x,2)+pow(current_pos.y,2));
 	//fwrite(&total_distance, sizeof(total_distance), 1, fp);
-	print("distacne %d \n", total_distance);
+	//print("distacne %d \n", total_distance);
 	angleTurned = current_pos.theta * 57.29578;
 	//fwrite(&angleTurned, sizeof(angleTurned), 1, fp);
 	//fclose(fp);
-	print("angle %f \n", angleTurned);
+	//print("angle %f \n", angleTurned);
 	
-	//print("total distance travelled is %.2f cm at an angle of %.2f degrees",total_distance,angleTurned);
+	print("total distance travelled is %.2f cm at an angle of %.2f degrees\n",total_distance,angleTurned);
 }

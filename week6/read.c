@@ -9,9 +9,8 @@ int main() {
 	fwrite(&total, sizeof(total), 1, f);
 	fclose(f); */
 
-	FILE* fp = fopen("Position.text", "r");
+	FILE* fp = fopen("position.txt", "r");
 	float total_distance, angleTurned;
-	fp = fopen("Position.text", "r");
 	fread(&total_distance, 5, 1, fp);
 	printf("distance travelled is %.2f\n",total_distance);
 	fread(&angleTurned, 5, 1, fp);

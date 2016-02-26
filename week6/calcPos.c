@@ -35,10 +35,10 @@ void calcPosition(){
   float rad_turn;
 	
 	
-//	sd_mount(22, 23, 24, 25);
-//	FILE* fp = fopen("Position.text", "w");
+	sd_mount(22, 23, 24, 25);
+	FILE* fp = fopen("position.txt", "w");
 	
-	wheelRevCount = (M_PI * WHEEL_DIAMETER_CM)/360.0;
+	wheelRevCount = 3.25;//(M_PI * WHEEL_DIAMETER_CM)/360.0;
 	
 	drive_getTicks(&l_encoder,&r_encoder);
 	l_dist = (float)l_encoder * wheelRevCount;
@@ -71,12 +71,12 @@ void calcPosition(){
 	
 	}
 	total_distance = sqrt(pow(current_pos.x,2)+pow(current_pos.y,2));
-	//fwrite(&total_distance, sizeof(total_distance), 1, fp);
-	print("distacne %d \n", total_distance);
-	angleTurned = current_pos.theta * 57.29578;
-	//fwrite(&angleTurned, sizeof(angleTurned), 1, fp);
-	//fclose(fp);
-	print("angle %f \n", angleTurned);
+	fwrite(&total_distance, sizeof(total_distance), 1, fp);
+	//print("distacne %d \n", total_distance);
+	angleTurned = atan(current_pos.x/current_pos.y) * 57.296;;//current_pos.theta * 57.29578;
+	fwrite(&angleTurned, sizeof(angleTurned), 1, fp);
+	fclose(fp);
+	//print("angle %f \n", angleTurned);
 	
-	//print("total distance travelled is %.2f cm at an angle of %.2f degrees",total_distance,angleTurned);
+	//print("total distance travelled is %.2f cm at an angle of %.2f degrees\n x %f y %f \n",total_distance,angleTurned, current_pos.x, current_pos.y);
 }

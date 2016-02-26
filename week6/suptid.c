@@ -19,16 +19,6 @@ int stopDead(int distance) {
 		return 0;
 }
 
-int ledDist(int irOut, int irIn, int led) {
-	int dist = 0;
-	int i;
-	for(i = 0; i < 160; i += ) {
-		dac_ctr(led, 0, dacVal);
-		freqout(irOut, 1, 38000);
-		dist += input(irIn);
-	}
-	return dist;
-}
 
 void followWall(int irOut, int irIn, int distance, int left) {
 	init();

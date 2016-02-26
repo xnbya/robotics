@@ -11,18 +11,23 @@ LIBS=-I . -L . -I ${SIMPLE_LIBRARY}/Utility/libsimpletools -L ${SIMPLE_LIBRARY}/
 
 CFLAGS=-mcmm -m32bit-doubles -std=c99
 
-compileCalcPos: librobo.c
+compileCalcPos: calcPos.c
 	$(PROPGCC) $(LIBS) -Os -mcmm -m32bit-doubles -std=c99 -c calcPos.c -lm -o cmm/calcPos.o
 	
 compileLibrobo: librobo.c
 	$(PROPGCC) $(LIBS) -Os -mcmm -m32bit-doubles -std=c99 -c librobo.c -o cmm/librobo.o
+
+readDist: read.c
+	$(PROPGCC) $(LIBS) -o cmm/read.elf $(CFLAGS) read.c -lm -lsimpletools -lsimpletext -lsimplei2c -labdrive -lfdserial -lm -lsimpletools -lsimpletext -lsimplei2c -labdrive -lping -labcalibrate -lservo -lm -lsimpletools -lsimpletext -lsimplei2c -lm -lsimpletools -lsimpletext -lm -lsimpletools -lm
+	$(PROPLOAD) -r -t cmm/read.elf
+
 
 loadProg: ${FILENAME}.c
 	rm -r cmm
 	mkdir cmm
 	make compileLibrobo
 	make compileCalcPos
-	$(PROPGCC) $(LIBS) -o cmm/${FILENAME}.elf $(CFLAGS) cmm/librobo.o ${FILENAME}.c -lm -lsimpletools -lsimpletext -lsimplei2c -labdrive -lfdserial -lm -lsimpletools -lsimpletext -lsimplei2c -labdrive -lping -labcalibrate -lservo -lm -lsimpletools -lsimpletext -lsimplei2c -lm -lsimpletools -lsimpletext -lm -lsimpletools -lm
+	$(PROPGCC) $(LIBS) -o cmm/${FILENAME}.elf $(CFLAGS) cmm/librobo.o cmm/calcPos.o ${FILENAME}.c -lm -lsimpletools -lsimpletext -lsimplei2c -labdrive -lfdserial -lm -lsimpletools -lsimpletext -lsimplei2c -labdrive -lping -labcalibrate -lservo -lm -lsimpletools -lsimpletext -lsimplei2c -lm -lsimpletools -lsimpletext -lm -lsimpletools -lm
 	$(PROPLOAD) -e -r -t cmm/${FILENAME}.elf
 	#$(PROPDUMP) -h cmm/${FILENAME}.elf
 	#$(PROPLOAD) -Dreset=dtr -I ${PARALLAX_FOLDER}/propeller-load -b RCFAST cmm/${FILENAME}.elf -r -p ${PORT} -t115200

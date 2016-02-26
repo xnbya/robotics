@@ -4,11 +4,13 @@
 #include "ping.h"
 #include "calcPos.h"
 
-#define MINSPEED 20
+#define MAXCHANGE 20
 #define STARTSPEED 40
-#define PROPGAIN 10
+#define PROPGAIN 50
 #define INTGAIN 5
-#define TARGET 20
+#define DIFFGAIN 50
+#define TARGET 18
+#define CHANGEDIV 50
 
 //detect if something is dead in front, return 1 if it is
 int stopDead(int distance) {
@@ -23,66 +25,58 @@ int stopDead(int distance) {
 int ledDist(int irOut, int irIn, int led) {
 	int dist = 0;
 	int i;
-	for(i = 0; i < 160; i += 8) {
+	for(i = 0; i < 240; i += 8) {
 		dac_ctr(led, 0, i);
 		freqout(irOut, 1, 38000);
 		dist += input(irIn);
 	}
 	return dist;
 }
-
 int totalerror;
+int preverror;
 
 int integralTerm(int dist) {
 	totalerror += (dist - TARGET);
 	return totalerror * INTGAIN;
 }
 
+int diffTerm(int error) {
+	int diff = preverror - error;
+	preverror = error;
+	return diff * DIFFGAIN;
+}
+
 void followWall(int irOut, int irIn, int distance, int led) {
 	//init();
 	totalerror = 0;
-	int speed = STARTSPEED;
-	int dist;
-	int change;
+	int dist, change, error;
+	int prev = 0;
 	while(!stopDead(distance)) {
 		//read IR
 		dist = ledDist(irOut, irIn, led);
-	//	print("ir %d \n", irRead);
-	/*	if(dist > ) {
-			if(closeCount == 0) {
-				leftspeed = rightspeed = STARTSPEED;
-			}
-			farCount = 0;
-			closeCount++;
-			if(closeCount > RANGE && leftspeed > (MINSPEED + closeCount / DIVCON )) { 
-				leftspeed -= closeCount / DIVCON;
-				rightspeed += closeCount / DIVCON;
-			}
-		}
-		else {
-			if(farCount == 0) {
-				leftspeed = rightspeed = STARTSPEED;
-			}
-			closeCount = 0;
-			farCount++;
-			if(farCount > RANGE && rightspeed > (MINSPEED + closeCount / DIVCON)) {
-				leftspeed += farCount / DIVCON;
-				rightspeed -= farCount / DIVCON;
-			}
-		} */
-
-		change = PROPGAIN * (dist - TARGET); //proportional term
+		print("dist = %d \n", dist);
+		error = dist - TARGET;
+		change = PROPGAIN * error; //proportional term
+		print("propgain = %d \n", change);
 		change += integralTerm(dist);
+		print("int = %d \n", integralTerm(dist));
+		int diff = diffTerm(error);
+		print("diff term = %d \n", diff);
+		change += diff;
+
+		change = change / CHANGEDIV;
+		printf("change %d \n", change);
 
 
 
 
 
 		drive_speed(STARTSPEED - change, STARTSPEED + change);
+		//drive_speed(20,20);
 
-
+		//init();
 		//calcPosition();
-		pause(50);
+		pause(100);
 	}
 	drive_speed(0,0);
 }

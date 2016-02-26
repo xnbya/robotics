@@ -3,6 +3,12 @@
 
 int main() {
 	sd_mount(22, 23, 24, 25);
+
+	/*FILE* f = fopen("Position.text", "w");
+	float total = 0.5f;
+	fwrite(&total, sizeof(total), 1, f);
+	fclose(f); */
+
 	FILE* fp = fopen("Position.text", "r");
 	float total_distance, angleTurned;
 	fp = fopen("Position.text", "r");

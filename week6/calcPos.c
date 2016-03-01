@@ -1,8 +1,10 @@
-#include "simpletools.h"
+//#include "simpletools.h"
 #include "abdrive.h"
 #include <math.h>
 #define M_PI 3.1415
-#include "dimensions.h"
+#define wheelRevCount 3.25
+#define ROBOT_WIDTH_CM 10.58
+//#include "dimensions.h"
 
 
 float total_distance;
@@ -30,15 +32,13 @@ void calcPosition(){
 	float current_cos;
 	float current_sin;
 	float difference;
-	float wheelRevCount;
+	//float wheelRevCount;
 	int l_encoder = 0, r_encoder = 0;
   float rad_turn;
 	
 	
-	sd_mount(22, 23, 24, 25);
-	FILE* fp = fopen("position.txt", "w");
 	
-	wheelRevCount = 3.25;//(M_PI * WHEEL_DIAMETER_CM)/360.0;
+	//wheelRevCount = 3.25;//(M_PI * WHEEL_DIAMETER_CM)/360.0;
 	
 	drive_getTicks(&l_encoder,&r_encoder);
 	l_dist = (float)l_encoder * wheelRevCount;
@@ -70,10 +70,12 @@ void calcPosition(){
 		}
 	
 	}
-	total_distance = sqrt(pow(current_pos.x,2)+pow(current_pos.y,2));
+	sd_mount(22, 23, 24, 25);
+	FILE* fp = fopen("position.txt", "w");
+	total_distance = sqrt(current_pos.x * current_pos.x +current_pos.y * current_pos.y);
 	fwrite(&total_distance, sizeof(total_distance), 1, fp);
 	//print("distacne %d \n", total_distance);
-	angleTurned = atan(current_pos.x/current_pos.y) * 57.296;;//current_pos.theta * 57.29578;
+	//angleTurned = atan(current_pos.x/current_pos.y) * 57.296;;//current_pos.theta * 57.29578;
 	fwrite(&angleTurned, sizeof(angleTurned), 1, fp);
 	fclose(fp);
 	//print("angle %f \n", angleTurned);

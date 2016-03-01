@@ -1,6 +1,6 @@
 //Robot lib
 #include "abdrive.h"
-#include "simpletools.h"
+//#include "simpletools.h"
 #include "ping.h"
 #include "calcPos.h"
 
@@ -11,6 +11,9 @@
 #define DIFFGAIN 30
 #define TARGET 24
 #define CHANGEDIV 20
+
+//int fd = 65;
+//char *test = "aaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaHello World!";
 
 //detect if something is dead in front, return 1 if it is
 int stopDead(int distance) {
@@ -26,8 +29,8 @@ int ledDist(int irOut, int irIn, int led) {
 	int dist = 0;
 	int i;
 	for(i = 0; i < 260; i += 8) {
-		dac_ctr(led, 0, i);
-		freqout(irOut, 1, 38000);
+		//dac_ctr(led, 0, i);
+		freqout(irOut, 1, 38000 + i * 100);
 		dist += input(irIn);
 	}
 	return dist;
@@ -50,15 +53,14 @@ void followWall(int irOut, int irIn, int distance, int led) {
 	//init();
 	totalerror = 0;
 	int dist, change, lerror;
-	int prev = 0;
 	//calibrate robot
-	int totaldist = 0;
+	/*int totaldist = 0;
 	for(int i = 0; i < 10; i++) { 
 		dist += ledDist(irOut, irIn, led);
 		pause(50);
-	}
+	}*/
 	//distance = totaldist / 10;
-	print("dist = %d \n", totaldist);
+	//print("dist = %d \n", totaldist);
 	while(!stopDead(distance)) {
 		//read IR
 		dist = ledDist(irOut, irIn, led);

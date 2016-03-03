@@ -61,6 +61,7 @@ void followWall(int irOut, int irIn, int distance, int led) {
 	}*/
 	//distance = totaldist / 10;
 	//print("dist = %d \n", totaldist);
+	init();
 	while(!stopDead(distance)) {
 		//read IR
 		dist = ledDist(irOut, irIn, led);
@@ -92,7 +93,6 @@ void followWall(int irOut, int irIn, int distance, int led) {
 		drive_speed(STARTSPEED - change, STARTSPEED + change);
 		//drive_speed(20,20);
 
-		init();
 		calcPosition();
 		pause(50);
 	}

@@ -4,12 +4,12 @@
 #include "ping.h"
 #include "calcPos.h"
 
-#define MAXCHANGE 20
+#define MAXCHANGE 27
 #define STARTSPEED 60
 #define PROPGAIN 50
 #define INTGAIN 4
 #define DIFFGAIN 30
-#define TARGET 15
+#define TARGET 30
 #define CHANGEDIV 40
 
 //int fd = 65;
@@ -28,7 +28,7 @@ int stopDead(int distance) {
 int ledDist(int irOut, int irIn, int led) {
 	int dist = 0;
 	int i;
-	for(i = 0; i < 40; i += 1) {
+	for(i = 0; i < 50; i += 1) {
 		//dac_ctr(led, 0, i);
 		freqout(irOut, 1, 38000 + i * 75);
 		dist += input(irIn);
@@ -66,7 +66,7 @@ void followWall(int irOut, int irIn, int distance, int led) {
 		//read IR
 		dist = ledDist(irOut, irIn, led);
 
-		//print("dist = %d \n", dist);
+	//	print("dist = %d \n", dist);
 		lerror = dist - TARGET;
 		change = PROPGAIN * lerror; //proportional term
 		//print("propgain = %d \n", change);
@@ -88,16 +88,18 @@ void followWall(int irOut, int irIn, int distance, int led) {
 			change = -MAXCHANGE;
 		}
 
-		change = 10;
+		//change = 10;
+		//change = 0;
 
 		drive_speed(STARTSPEED - change, STARTSPEED + change);
 		//drive_speed(20,20);
+		//
 
 		calcPosition();
 		pause(50);
 	}
-	drive_speed(0,0);
 	printPosition();
+	drive_speed(0,0);
 }
 
 void followLeftWall() {

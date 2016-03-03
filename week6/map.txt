@@ -207,8 +207,8 @@ Discarded input sections
  .data          0x0000000000000000        0x0 cmm/librobo.o
  .bss           0x0000000000000000        0x0 cmm/librobo.o
  .bss           0x0000000000000000        0x0 cmm/calcPos.o
- .data          0x0000000000000000        0x0 /tmp/cclhuVHk.o
- .bss           0x0000000000000000        0x0 /tmp/cclhuVHk.o
+ .data          0x0000000000000000        0x0 /tmp/cck0pi5Y.o
+ .bss           0x0000000000000000        0x0 /tmp/cck0pi5Y.o
  .text          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
  .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
  .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
@@ -389,7 +389,7 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
 LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
 LOAD cmm/librobo.o
 LOAD cmm/calcPos.o
-LOAD /tmp/cclhuVHk.o
+LOAD /tmp/cck0pi5Y.o
 LOAD /home/alexis/dev/robotics/libs/Protocol/libsimplei2c/cmm//libsimplei2c.a
 LOAD /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a
 LOAD /home/alexis/dev/robotics/libs/TextDevices/libfdserial/cmm/libfdserial.a
@@ -490,7 +490,7 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
                 0x00000000000008d0                _init
                 0x00000000000008f0                _calcPosition
                 0x0000000000000a02                _printPosition
- .text          0x0000000000000a5c        0x8 /tmp/cclhuVHk.o
+ .text          0x0000000000000a5c        0x8 /tmp/cck0pi5Y.o
                 0x0000000000000a5c                _main
  .text.drive_com
                 0x0000000000000a64       0x50 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)

@@ -1,10 +1,8 @@
-//#include "simpletools.h"
 #include "abdrive.h"
 #include <math.h>
 #define M_PI 3.1415
 #define wheelRevCount 0.41
 #define ROBOT_WIDTH_CM 10.58
-//#include "dimensions.h"
 
 
 float total_distance;
@@ -28,21 +26,16 @@ void init(){
 	lticks=rticks=0;
 }
 
-
+//update pos each time heading changes or might
 void calcPosition(){
 	float l_dist;
 	float r_dist;
 	float current_cos;
 	float current_sin;
-//	float difference;
-	//float wheelRevCount;
 	int l_encoder = 0, r_encoder = 0;
 	float rad_turn;
 	
-	
-	
-	//wheelRevCount = 3.25;//(M_PI * WHEEL_DIAMETER_CM)/360.0;
-	
+	//read ticks travelled
 	drive_getTicks(&l_encoder,&r_encoder);
 	l_dist = (float)(l_encoder - lticks) * wheelRevCount;
 	r_dist = (float)(r_encoder - rticks) * wheelRevCount;
@@ -66,19 +59,8 @@ void calcPosition(){
 		current_pos.y += dy;
 		current_pos.x += dx;
 	//	print("dy %f dx %f \n", dy, dx);	
-	//	current_pos.x += rad_turn * (sin(difference / ROBOT_WIDTH_CM + current_pos.theta)-current_sin);
-	//	current_pos.y += rad_turn * (cos(difference / ROBOT_WIDTH_CM + current_pos.theta)-current_cos);
 		
 		current_pos.theta += rad_turn;
-	/*	
-       // to limit it from +PI to -PI
-		while(current_pos.theta > M_PI){
-			current_pos.theta -= (2.0 * M_PI);
-		}
-		while(current_pos.theta < -1 * M_PI){
-			current_pos.theta += (2.0 * M_PI);
-		}
-*/	
 	}
 	//print("x %f y %f\n", angleTurned);
 	
@@ -89,13 +71,13 @@ void calcPosition(){
 
 }
 
-void printPosition() { 
+//write position to SD card
+//this takes a lot of memory
+//11.5KB when we only have 32KB for the sd driver
+//probably shouldn't be using an sd card like this
+void printPosition() {  
 	sd_mount(22, 23, 24, 25);
 	FILE* fp = fopen("POS.TXT", "w");
-	fwrite(&current_pos, sizeof(current_pos), 1, fp);
-	fwrite(&current_pos, sizeof(current_pos), 1, fp);
-	fwrite(&current_pos, sizeof(current_pos), 1, fp);
-	fwrite(&current_pos, sizeof(current_pos), 1, fp);
 	fwrite(&current_pos, sizeof(current_pos), 1, fp);
 	//total_distance = sqrt(current_pos.x * current_pos.x +current_pos.y * current_pos.y);
 	//fwrite(&total_distance, sizeof(total_distance), 1, fp);

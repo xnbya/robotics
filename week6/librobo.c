@@ -1,4 +1,5 @@
 //Robot lib
+//Alexis Enston - week6
 #include "abdrive.h"
 //#include "simpletools.h"
 #include "ping.h"
@@ -12,9 +13,6 @@
 #define TARGET 30
 #define CHANGEDIV 40
 
-//int fd = 65;
-//char *test = "aaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaHello World!";
-
 //detect if something is dead in front, return 1 if it is
 int stopDead(int distance) {
 	int dist = ping_cm(8);
@@ -25,6 +23,7 @@ int stopDead(int distance) {
 		return 0;
 }
 
+//approximate distance from ir freq response
 int ledDist(int irOut, int irIn, int led) {
 	int dist = 0;
 	int i;

@@ -58,14 +58,18 @@ void calcPosition(){
 		current_pos.y += r_dist * current_sin;
 	}//when the robot is turning
 	else{
-		rad_turn = ROBOT_WIDTH_CM * (l_dist + r_dist)/2.0;
+		rad_turn = (l_dist - r_dist) / ROBOT_WIDTH_CM;//ROBOT_WIDTH_CM * (l_dist + r_dist)/2.0;
+		float Rm = ((l_dist/rad_turn) + (r_dist/rad_turn)) / 2;
 		print("rad %f \n", rad_turn);
-		difference = r_dist - l_dist;
+		float dy = Rm * (sin(current_pos.theta + rad_turn) - sin(current_pos.theta));
+		float dx = Rm * (cos(current_pos.theta + rad_turn) - cos(current_pos.theta));
+		current_pos.y += dy;
+		current_pos.x += dx;
+		print("dy %f dx %f \n", dy, dx);	
+	//	current_pos.x += rad_turn * (sin(difference / ROBOT_WIDTH_CM + current_pos.theta)-current_sin);
+	//	current_pos.y += rad_turn * (cos(difference / ROBOT_WIDTH_CM + current_pos.theta)-current_cos);
 		
-		current_pos.x += rad_turn * (sin(difference / ROBOT_WIDTH_CM + current_pos.theta)-current_sin);
-		current_pos.y += rad_turn * (cos(difference / ROBOT_WIDTH_CM + current_pos.theta)-current_cos);
-		
-		current_pos.theta += difference / ROBOT_WIDTH_CM;
+		current_pos.theta += rad_turn;
 		
        // to limit it from +PI to -PI
 		while(current_pos.theta > M_PI){

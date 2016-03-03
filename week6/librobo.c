@@ -88,7 +88,7 @@ void followWall(int irOut, int irIn, int distance, int led) {
 			change = -MAXCHANGE;
 		}
 
-
+		change = 10;
 
 		drive_speed(STARTSPEED - change, STARTSPEED + change);
 		//drive_speed(20,20);

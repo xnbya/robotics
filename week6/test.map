@@ -1,11 +1,11 @@
 Archive member included because of file (symbol)
 
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_sqrtf.o)
-                              /tmp/ccp3a3cL.o (_sqrt)
+                              /tmp/ccan2hpn.o (_sqrt)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cosf.o)
-                              /tmp/ccp3a3cL.o (_cos)
+                              /tmp/ccan2hpn.o (_cos)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_sinf.o)
-                              /tmp/ccp3a3cL.o (_sin)
+                              /tmp/ccan2hpn.o (_sin)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_cosf.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cosf.o) (___kernel_cosf)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_sinf.o)
@@ -19,15 +19,15 @@ Archive member included because of file (symbol)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_scalbnf.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_rem_pio2f.o) (_scalbnf)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
-                              /tmp/cc3nFE4I.o (_freqout)
+                              /tmp/ccAbh0Nk.o (_freqout)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
-                              /tmp/cc3nFE4I.o (_input)
+                              /tmp/ccAbh0Nk.o (_input)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
                               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o) (_low)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
-                              /tmp/cc3nFE4I.o (_pause)
+                              /tmp/ccAbh0Nk.o (_pause)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o)
-                              /tmp/ccp3a3cL.o (_sd_mount)
+                              /tmp/ccan2hpn.o (_sd_mount)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
                               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o) (_square_wave_setup)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
@@ -35,7 +35,7 @@ Archive member included because of file (symbol)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(addfiledriver.o)
                               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o) (_add_driver)
 /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(getticks.o)
-                              /tmp/ccp3a3cL.o (_drive_getTicks)
+                              /tmp/ccan2hpn.o (_drive_getTicks)
 /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
                               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(getticks.o) (_abd_ticksL)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
@@ -55,7 +55,7 @@ Archive member included because of file (symbol)
 /home/alexis/dev/robotics/lib/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
                               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o) (_i2c_start)
 /home/alexis/dev/robotics/lib/Sensor/libping/cmm/libping.a(ping.o)
-                              /tmp/cc3nFE4I.o (_ping_cm)
+                              /tmp/ccAbh0Nk.o (_ping_cm)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
                               /home/alexis/dev/robotics/lib/Sensor/libping/cmm/libping.a(ping.o) (_pulse_in)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
@@ -67,29 +67,29 @@ Archive member included because of file (symbol)
 /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
                               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o) (_get_state)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
-                              /tmp/ccp3a3cL.o (___addsf3)
+                              /tmp/ccan2hpn.o (___addsf3)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
-                              /tmp/ccp3a3cL.o (___divsf3)
+                              /tmp/ccan2hpn.o (___divsf3)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(eqsf2.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_rem_pio2f.o) (___eqsf2)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(gesf2.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_rem_pio2f.o) (___gesf2)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(lesf2.o)
-                              /tmp/ccp3a3cL.o (___ltsf2)
+                              /tmp/ccan2hpn.o (___ltsf2)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
-                              /tmp/ccp3a3cL.o (___mulsf3)
+                              /tmp/ccan2hpn.o (___mulsf3)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
-                              /tmp/ccp3a3cL.o (___subsf3)
+                              /tmp/ccan2hpn.o (___subsf3)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_cosf.o) (___fixsfsi)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
-                              /tmp/ccp3a3cL.o (___floatsisf)
+                              /tmp/ccan2hpn.o (___floatsisf)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o)
-                              /tmp/ccp3a3cL.o (_fopen)
+                              /tmp/ccan2hpn.o (_fopen)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o) (___fopen_driver)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fwrite.o)
-                              /tmp/ccp3a3cL.o (_fwrite)
+                              /tmp/ccan2hpn.o (_fwrite)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(init_io.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o) (__InitIO)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(abort.o)
@@ -154,17 +154,17 @@ _abd_speedL         0x4               /home/alexis/dev/robotics/lib/Robotics/Act
 _abd_cntrLidx       0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _abd_drc            0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(getticks.o)
 _st_iodt            0x4               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-_totalerror         0x4               /tmp/cc3nFE4I.o
+_totalerror         0x4               /tmp/ccAbh0Nk.o
 _abd_us             0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _abd_spdmL          0x1e0             /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 __servoPulseReps    0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _abd_cntrRidx       0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _us                 0x4               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
 ___stdio_lock       0x4               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
-_angleTurned        0x4               /tmp/ccp3a3cL.o
+_angleTurned        0x4               /tmp/ccan2hpn.o
 _abd_spdrR          0x1e0             /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _dfs_volinfo        0x34              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
-_total_distance     0x4               /tmp/ccp3a3cL.o
+_total_distance     0x4               /tmp/ccan2hpn.o
 _st_eeprom          0x4               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
 _abd_iR             0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _st_usTicks         0x4               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
@@ -182,13 +182,13 @@ _abd_elCntR         0x4               /home/alexis/dev/robotics/lib/Robotics/Act
 _dfs_currdir        0x40              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
 _abd_edL            0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _st_eeInitFlag      0x4               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
-_current_pos        0xc               /tmp/ccp3a3cL.o
+_current_pos        0xc               /tmp/ccan2hpn.o
 _abd_pR             0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _abd_trimFR         0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _abd_elCntL         0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _abd_iL             0x4               /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _st_pauseTicks      0x4               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-_preverror          0x4               /tmp/cc3nFE4I.o
+_preverror          0x4               /tmp/ccAbh0Nk.o
 _abd_spdmR          0x1e0             /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
 _st_msTicks         0x4               /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
 _abd_spdrL          0x1e0             /home/alexis/dev/robotics/lib/Robotics/ActivityBot/libabdrive/cmm//libabdrive.a(abdrive.o)
@@ -212,9 +212,9 @@ Linker script and memory map
 LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
 LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
 LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
-LOAD /tmp/cc3nFE4I.o
-LOAD /tmp/ccp3a3cL.o
-LOAD /tmp/ccCT3nnN.o
+LOAD /tmp/ccAbh0Nk.o
+LOAD /tmp/ccan2hpn.o
+LOAD /tmp/ccqb4Z2p.o
 LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a
 LOAD /home/alexis/dev/robotics/lib/Utility/libsimpletools/cmm//libsimpletools.a
 LOAD /home/alexis/dev/robotics/lib/TextDevices/libsimpletext/cmm//libsimpletext.a
@@ -316,17 +316,17 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .text          0x00000000000007f8        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
  .text          0x00000000000007f8        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
  .text          0x00000000000007f8        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
- .text          0x00000000000007f8      0x2d4 /tmp/cc3nFE4I.o
+ .text          0x00000000000007f8      0x2d4 /tmp/ccAbh0Nk.o
                 0x00000000000007f8                _stopDead
                 0x0000000000000831                _ledDist
                 0x00000000000008cd                _integralTerm
                 0x000000000000090a                _diffTerm
                 0x0000000000000959                _followWall
                 0x0000000000000ab1                _followLeftWall
- .text          0x0000000000000acc      0x3b4 /tmp/ccp3a3cL.o
+ .text          0x0000000000000acc      0x3b4 /tmp/ccan2hpn.o
                 0x0000000000000acc                _init
                 0x0000000000000b03                _calcPosition
- .text          0x0000000000000e80       0x14 /tmp/ccCT3nnN.o
+ .text          0x0000000000000e80       0x14 /tmp/ccqb4Z2p.o
                 0x0000000000000e80                _main
  .text          0x0000000000000e94       0xb0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_sqrtf.o)
                 0x0000000000000e94                _sqrtf
@@ -567,9 +567,9 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .data          0x0000000000006be8        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
  .data          0x0000000000006be8        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
  .data          0x0000000000006be8        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
- .data          0x0000000000006be8        0x0 /tmp/cc3nFE4I.o
- .data          0x0000000000006be8       0x30 /tmp/ccp3a3cL.o
- .data          0x0000000000006c18        0x0 /tmp/ccCT3nnN.o
+ .data          0x0000000000006be8        0x0 /tmp/ccAbh0Nk.o
+ .data          0x0000000000006be8       0x30 /tmp/ccan2hpn.o
+ .data          0x0000000000006c18        0x0 /tmp/ccqb4Z2p.o
  .data          0x0000000000006c18        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_sqrtf.o)
  .data          0x0000000000006c18        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cosf.o)
  .data          0x0000000000006c1c        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_sinf.o)
@@ -701,9 +701,9 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .bss           0x00000000000071dc        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
  .bss           0x00000000000071dc        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
  .bss           0x00000000000071dc        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
- .bss           0x00000000000071dc        0x0 /tmp/cc3nFE4I.o
- .bss           0x00000000000071dc        0x0 /tmp/ccp3a3cL.o
- .bss           0x00000000000071dc        0x0 /tmp/ccCT3nnN.o
+ .bss           0x00000000000071dc        0x0 /tmp/ccAbh0Nk.o
+ .bss           0x00000000000071dc        0x0 /tmp/ccan2hpn.o
+ .bss           0x00000000000071dc        0x0 /tmp/ccqb4Z2p.o
  .bss           0x00000000000071dc        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_sqrtf.o)
  .bss           0x00000000000071dc        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cosf.o)
  .bss           0x00000000000071dc        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_sinf.o)
@@ -795,10 +795,10 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .bss           0x0000000000007718        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  *(.bss*)
  *(COMMON)
- COMMON         0x0000000000007718        0x8 /tmp/cc3nFE4I.o
+ COMMON         0x0000000000007718        0x8 /tmp/ccAbh0Nk.o
                 0x0000000000007718                _totalerror
                 0x000000000000771c                _preverror
- COMMON         0x0000000000007720       0x14 /tmp/ccp3a3cL.o
+ COMMON         0x0000000000007720       0x14 /tmp/ccan2hpn.o
                 0x0000000000007720                _angleTurned
                 0x0000000000007724                _total_distance
                 0x0000000000007728                _current_pos

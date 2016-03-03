@@ -9,8 +9,8 @@
 #define PROPGAIN 50
 #define INTGAIN 4
 #define DIFFGAIN 30
-#define TARGET 24
-#define CHANGEDIV 20
+#define TARGET 15
+#define CHANGEDIV 40
 
 //int fd = 65;
 //char *test = "aaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaHello World!";
@@ -28,9 +28,9 @@ int stopDead(int distance) {
 int ledDist(int irOut, int irIn, int led) {
 	int dist = 0;
 	int i;
-	for(i = 0; i < 260; i += 8) {
+	for(i = 0; i < 40; i += 1) {
 		//dac_ctr(led, 0, i);
-		freqout(irOut, 1, 38000 + i * 100);
+		freqout(irOut, 1, 38000 + i * 75);
 		dist += input(irIn);
 	}
 	return dist;
@@ -64,6 +64,7 @@ void followWall(int irOut, int irIn, int distance, int led) {
 	while(!stopDead(distance)) {
 		//read IR
 		dist = ledDist(irOut, irIn, led);
+
 		//print("dist = %d \n", dist);
 		lerror = dist - TARGET;
 		change = PROPGAIN * lerror; //proportional term
@@ -77,7 +78,7 @@ void followWall(int irOut, int irIn, int distance, int led) {
 		change += diff;
 
 		change = change / CHANGEDIV;
-		//printf("change %d \n", change);
+		//print("change %d \n", change);
 
 		if(change > MAXCHANGE) {
 			change = MAXCHANGE;
@@ -96,8 +97,9 @@ void followWall(int irOut, int irIn, int distance, int led) {
 		pause(50);
 	}
 	drive_speed(0,0);
+	printPosition();
 }
 
 void followLeftWall() {
-	followWall(11, 10, 5, 26);
+	followWall(11, 10, 10, 26);
 }

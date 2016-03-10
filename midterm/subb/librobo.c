@@ -24,7 +24,7 @@ int stopDead(int distance) {
 }
 
 //approximate distance from ir freq response
-int ledDist(int irOut, int irIn) {
+int ledDist(int irOut, int irIn, int led) {
 	int dist = 0;
 	int i;
 	for(i = 0; i < 50; i += 1) {
@@ -48,7 +48,7 @@ int diffTerm(int lerror) {
 	return diff * DIFFGAIN;
 }
 
-void followWall(int irOut, int irIn, int distance) {
+void followWall(int irOut, int irIn, int distance, int led) {
 	//init();
 	totalerror = 0;
 	int dist, change, lerror;
@@ -63,7 +63,7 @@ void followWall(int irOut, int irIn, int distance) {
 	init();
 	while(!stopDead(distance)) {
 		//read IR
-		dist = ledDist(irOut, irIn);
+		dist = ledDist(irOut, irIn, led);
 
 	//	print("dist = %d \n", dist);
 		lerror = dist - TARGET;
@@ -102,5 +102,5 @@ void followWall(int irOut, int irIn, int distance) {
 }
 
 void followLeftWall() {
-	followWall(11, 10, 10);
+	followWall(11, 10, 10, 26);
 }

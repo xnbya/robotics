@@ -28,7 +28,7 @@ int ledDist(int irOut, int irIn) {
 	int dist = 0;
 	int i;
 	for(i = 0; i < 50; i += 1) {
-		//dac_ctr(led, 0, i);
+		dac_ctr(25, 0, i);
 		freqout(irOut, 1, 38000 + i * 75);
 		dist += input(irIn);
 	}

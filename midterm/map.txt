@@ -1,55 +1,73 @@
 Archive member included because of file (symbol)
 
-/home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                              cmm/librobo.o (_drive_speed)
-/home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
+/home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+                              cmm/librobo.o (_drive_goto)
+/home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
                               cmm/calcPos.o (_drive_getTicks)
-/home/alexis/dev/robotics/libs/Sensor/libping/cmm/libping.a(ping.o)
+/home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(ramp.o)
+                              /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o) (_drive_ramp)
+/home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+                              /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o) (_abd_speedLimit)
+/home/alexis/dev/robo/lib/Sensor/libping/cmm/libping.a(ping.o)
                               cmm/librobo.o (_ping_cm)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(dac.o)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(dac.o)
                               cmm/librobo.o (_dac_ctr)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
-                              /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_ee_getByte)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getInt.o)
-                              /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_ee_getInt)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getStr.o)
-                              /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_ee_getStr)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
+                              /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_ee_getByte)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getInt.o)
+                              /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_ee_getInt)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getStr.o)
+                              /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_ee_getStr)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
                               cmm/librobo.o (_freqout)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o) (_i2c_in)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o) (_i2c_in)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
                               cmm/librobo.o (_input)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
-                              /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_low)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
+                              /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_low)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
                               cmm/librobo.o (_pause)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
-                              /home/alexis/dev/robotics/libs/Sensor/libping/cmm/libping.a(ping.o) (_pulse_in)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
-                              /home/alexis/dev/robotics/libs/Sensor/libping/cmm/libping.a(ping.o) (_pulse_out)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o)
-                              cmm/calcPos.o (_sd_mount)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(setOutput.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o) (_set_output)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o) (_square_wave_setup)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o) (_st_iodt)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(addfiledriver.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o) (_add_driver)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o) (_ee_init)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(endianSwap.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o) (_endianSwap)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(getOutput.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o) (_get_output)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o) (_get_state)
-/home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_init.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o) (_i2c_newbus)
-/home/alexis/dev/robotics/libs/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o) (_i2c_start)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
+                              /home/alexis/dev/robo/lib/Sensor/libping/cmm/libping.a(ping.o) (_pulse_in)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
+                              /home/alexis/dev/robo/lib/Sensor/libping/cmm/libping.a(ping.o) (_pulse_out)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(setOutput.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o) (_set_output)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o) (_square_wave_setup)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o) (_st_iodt)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o) (_ee_init)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(endianSwap.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o) (_endianSwap)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(getOutput.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o) (_get_output)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o) (_get_state)
+/home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_init.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o) (_i2c_newbus)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(print.o)
+                              cmm/librobo.o (_print)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putStr.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(print.o) (_putStr)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putChar.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putStr.o) (_putChar)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(simpleterm.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putChar.o) (_dport_ptr)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosprint.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(print.o) (__dosprnt)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_open.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(simpleterm.o) (_serial_open)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_rxtx.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_open.o) (_serial_rxChar)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosput.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosprint.o) (_SPUTC)
+/home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosprint.o) (_float2string)
+/home/alexis/dev/robo/lib/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o) (_i2c_start)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cexpf.o)
                               cmm/calcPos.o (_cexpf)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_sincosf.o)
@@ -71,129 +89,84 @@ Archive member included because of file (symbol)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(eqsf2.o)
                               cmm/calcPos.o (___eqsf2)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(gesf2.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_rem_pio2f.o) (___gesf2)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o) (___gesf2)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(lesf2.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_expf.o) (___ltsf2)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o) (___ltsf2)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
                               cmm/calcPos.o (___mulsf3)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
                               cmm/calcPos.o (___subsf3)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_sincosf.o) (___fixsfsi)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o) (___fixsfsi)
+/opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o) (___fixunssfsi)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
                               cmm/calcPos.o (___floatsisf)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o)
-                              cmm/calcPos.o (_fopen)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o) (___fopen_driver)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fwrite.o)
-                              cmm/calcPos.o (_fwrite)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(init_io.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o) (__InitIO)
+/opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o) (___floatunsisf)
+/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o)
+                              cmm/librobo.o (_malloc)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(abort.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o) (_abort)
+/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(ctype.o)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosprint.o) (___ctype)
+/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sbrk.o)
+                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o) (__hubsbrk)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(thread.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o (__TLS)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(cogstart.o)
-                              /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_cogstart)
+                              /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o) (_cogstart)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memcpy.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o) (_memcpy)
+                              /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o) (_memcpy)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memset.o)
                               /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o (_memset)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strlen.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o) (_strlen)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strncmp.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o) (_strncmp)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(SimpleSerial.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(addfiledriver.o) (__SimpleSerialDriver)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(serialparam.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(SimpleSerial.o) (__baud)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(terminal.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(SimpleSerial.o) (__term_write)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o) (__FileDriver)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(mount.o)
-                              /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o) (_dfs_mount)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(dosfs.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o) (_DFS_GetVolInfo)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(file_io.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o) (_DFS_InitFileIO)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(load_sd_driver.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o) (_LoadSDDriver)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sd_driver.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(load_sd_driver.o) (_sd_driver_array)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fflush.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o) (_fflush)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o) (_malloc)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(atoi.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(SimpleSerial.o) (_atoi)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(div.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(dosfs.o) (_ldiv)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(ctype.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(atoi.o) (___ctype)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sbrk.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o) (__hubsbrk)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memcmp.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(dosfs.o) (_memcmp)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcat.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o) (_strcat)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcmp.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o) (_strcmp)
 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcpy.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o) (_strcpy)
-/opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strncpy.o)
-                              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(dosfs.o) (_strncpy)
+                              /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o) (_strcpy)
 
 Allocating common symbols
 Common symbol       size              file
 
-_abd_speedL         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_cntrLidx       0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_drc            0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_st_iodt            0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+_abd_speedL         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_abd_cntrLidx       0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_drc            0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_st_iodt            0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
 _totalerror         0x4               cmm/librobo.o
-_abd_us             0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_us             0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
 _rticks             0x4               cmm/calcPos.o
-_abd_spdmL          0x1e0             /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-__servoPulseReps    0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_cntrRidx       0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_us                 0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-___stdio_lock       0x4               /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
+_abd_spdmL          0x1e0             /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+__servoPulseReps    0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_abd_cntrRidx       0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_us                 0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
 _angleTurned        0x4               cmm/calcPos.o
-_abd_spdrR          0x1e0             /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_dfs_volinfo        0x34              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
+_abd_spdrR          0x1e0             /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
 _total_distance     0x4               cmm/calcPos.o
-_st_eeprom          0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
-_abd_iR             0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_st_usTicks         0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-_abd_pL             0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_trimFL         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_ms                 0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-_abd_trimBL         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_speedR         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_(float, int, long,...)(short)
-                    0x1a0             /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
-_abd_trimBR         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_edR            0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_st_timeout         0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+_st_eeprom          0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
+_abd_iR             0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_st_usTicks         0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+_abd_pL             0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_abd_trimFL         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_ms                 0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+_abd_trimBL         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_speedR         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_abd_trimBR         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_edR            0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_st_timeout         0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
 _lticks             0x4               cmm/calcPos.o
-_abd_elCntR         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_dfs_currdir        0x40              /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
-_abd_edL            0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_st_eeInitFlag      0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
+_abd_elCntR         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_edL            0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_st_eeInitFlag      0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
 _current_pos        0xc               cmm/calcPos.o
-_abd_pR             0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_trimFR         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_elCntL         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_iL             0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_st_pauseTicks      0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+_abd_pR             0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_abd_trimFR         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_elCntL         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_iL             0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_st_pauseTicks      0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
 _preverror          0x4               cmm/librobo.o
-_abd_spdmR          0x1e0             /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_st_msTicks         0x4               /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-_abd_spdrL          0x1e0             /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_dlc            0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-_abd_eeAddr         0x4               /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_spdmR          0x1e0             /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_st_msTicks         0x4               /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+_abd_spdrL          0x1e0             /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+_abd_dlc            0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+_abd_eeAddr         0x4               /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
 
 Discarded input sections
 
@@ -206,89 +179,73 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
- .data          0x0000000000000000        0x0 cmm/librobo.o
  .bss           0x0000000000000000        0x0 cmm/librobo.o
  .bss           0x0000000000000000        0x0 cmm/calcPos.o
- .data          0x0000000000000000        0x0 /tmp/ccdat8yi.o
- .bss           0x0000000000000000        0x0 /tmp/ccdat8yi.o
- .text          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .text.drive_close
-                0x0000000000000000       0x14 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .text.drive_setMaxSpeed
-                0x0000000000000000        0x8 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .text.drive_setRampStep
-                0x0000000000000000        0x8 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .text.drive_feedback
-                0x0000000000000000        0x8 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .text.drive_trim
-                0x0000000000000000        0x8 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .text.drive_open
-                0x0000000000000000       0x1c /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.xbee_setup
-                0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss._sprNext  0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.ridx      0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.tcR       0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.tcL       0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.kp        0x0000000000000000       0x18 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.rightPrev
-                0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.leftPrev  0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.trimctr   0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.abd_record
-                0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .data.abd_rampStep
-                0x0000000000000000        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .text          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
- .text.drive_getTicksCalc
-                0x0000000000000000       0x10 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Sensor/libping/cmm/libping.a(ping.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Sensor/libping/cmm/libping.a(ping.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(dac.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getInt.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getInt.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getStr.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getStr.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
- .text          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(setOutput.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(setOutput.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(addfiledriver.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(endianSwap.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(endianSwap.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(getOutput.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(getOutput.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_init.o)
- .text          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
- .data          0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
- .bss           0x0000000000000000        0x0 /home/alexis/dev/robotics/libs/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
+ .data          0x0000000000000000        0x0 /tmp/ccTMBIN5.o
+ .bss           0x0000000000000000        0x0 /tmp/ccTMBIN5.o
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(ramp.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(ramp.o)
+ COMMON         0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(ramp.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Sensor/libping/cmm/libping.a(ping.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Sensor/libping/cmm/libping.a(ping.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(dac.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getInt.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getInt.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getStr.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getStr.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
+ .text          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(setOutput.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(setOutput.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(endianSwap.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(endianSwap.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(getOutput.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(getOutput.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_init.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(print.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(print.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putStr.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putStr.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putChar.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putChar.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(simpleterm.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(simpleterm.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosprint.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosprint.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_open.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_open.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_rxtx.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_rxtx.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o)
+ .text          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
+ .data          0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
+ .bss           0x0000000000000000        0x0 /home/alexis/dev/robo/lib/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cexpf.o)
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cexpf.o)
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_sincosf.o)
@@ -314,16 +271,17 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
+ .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+ .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o)
- .data          0x0000000000000000        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fwrite.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fwrite.o)
+ .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
+ .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(abort.o)
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(abort.o)
+ .text          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(ctype.o)
+ .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(ctype.o)
+ .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sbrk.o)
  .text          0x0000000000000000        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(thread.o)
  .data          0x0000000000000000        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(thread.o)
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(cogstart.o)
@@ -332,43 +290,8 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memcpy.o)
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memset.o)
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memset.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strlen.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strlen.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strncmp.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strncmp.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(SimpleSerial.o)
- .text          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(serialparam.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(serialparam.o)
- .text          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(terminal.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(terminal.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(terminal.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(mount.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(mount.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(dosfs.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(file_io.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(load_sd_driver.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(load_sd_driver.o)
- .text          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sd_driver.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sd_driver.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fflush.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fflush.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(atoi.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(atoi.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(div.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(div.o)
- .text          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(ctype.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(ctype.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sbrk.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memcmp.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memcmp.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcat.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcat.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcmp.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcmp.o)
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcpy.o)
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcpy.o)
- .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strncpy.o)
- .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strncpy.o)
  .text          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .data          0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .bss           0x0000000000000000        0x0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
@@ -392,18 +315,18 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
 LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
 LOAD cmm/librobo.o
 LOAD cmm/calcPos.o
-LOAD /tmp/ccdat8yi.o
-LOAD /home/alexis/dev/robotics/libs/Protocol/libsimplei2c/cmm//libsimplei2c.a
-LOAD /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a
-LOAD /home/alexis/dev/robotics/libs/TextDevices/libfdserial/cmm/libfdserial.a
-LOAD /home/alexis/dev/robotics/libs/Sensor/libping/cmm/libping.a
-LOAD /home/alexis/dev/robotics/libs/Motor/libservo/cmm/libservo.a
-LOAD /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a
-LOAD /home/alexis/dev/robotics/libs/TextDevices/libsimpletext/cmm//libsimpletext.a
-LOAD /home/alexis/dev/robotics/libs/Protocol/libsimplei2c/cmm//libsimplei2c.a
-LOAD /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a
-LOAD /home/alexis/dev/robotics/libs/TextDevices/libsimpletext/cmm//libsimpletext.a
-LOAD /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a
+LOAD /tmp/ccTMBIN5.o
+LOAD /home/alexis/dev/robo/lib/Protocol/libsimplei2c/cmm//libsimplei2c.a
+LOAD /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a
+LOAD /home/alexis/dev/robo/lib/TextDevices/libfdserial/cmm/libfdserial.a
+LOAD /home/alexis/dev/robo/lib/Sensor/libping/cmm/libping.a
+LOAD /home/alexis/dev/robo/lib/Motor/libservo/cmm/libservo.a
+LOAD /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a
+LOAD /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a
+LOAD /home/alexis/dev/robo/lib/Protocol/libsimplei2c/cmm//libsimplei2c.a
+LOAD /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a
+LOAD /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a
+LOAD /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a
 LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a
 LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a
 START GROUP
@@ -480,473 +403,336 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
                 0x00000000000007ab                ___init
  .init          0x00000000000007e4       0x14 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
 
-.text           0x00000000000007f8     0x5580
+.text           0x00000000000007f8     0x422c
  *(.text*)
- .text          0x00000000000007f8       0xdc cmm/librobo.o
+ .text          0x00000000000007f8      0x15c cmm/librobo.o
                 0x00000000000007f8                _stopDead
                 0x000000000000080a                _ledDist
-                0x0000000000000839                _integralTerm
-                0x0000000000000848                _diffTerm
-                0x0000000000000857                _followWall
-                0x00000000000008c7                _followLeftWall
- .text          0x00000000000008d4      0x160 cmm/calcPos.o
-                0x00000000000008d4                _init
-                0x00000000000008f4                _calcPosition
-                0x0000000000000a06                _printPosition
- .text          0x0000000000000a34        0x8 /tmp/ccdat8yi.o
-                0x0000000000000a34                _main
- .text.drive_com
-                0x0000000000000a3c       0x50 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000000a3c                _drive_com
- .text.interpolation_table_setup
-                0x0000000000000a8c      0x210 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000000a8c                _interpolation_table_setup
- .text.interpolate
-                0x0000000000000c9c      0x110 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000000c9c                _interpolate
- .text.encoders
-                0x0000000000000dac      0x714 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000000dac                _encoders
- .text.set_drive_speed
-                0x00000000000014c0       0x80 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000014c0                _set_drive_speed
- .text.drive_speed
-                0x0000000000001540       0x9c /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000001540                _drive_speed
- .text.drive_getTicks
-                0x00000000000015dc       0x10 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
-                0x00000000000015dc                _drive_getTicks
- .text          0x00000000000015ec       0x2c /home/alexis/dev/robotics/libs/Sensor/libping/cmm/libping.a(ping.o)
-                0x00000000000015ec                _ping
-                0x0000000000001603                _ping_cm
-                0x000000000000160d                _ping_inches
- .text          0x0000000000001618      0x128 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(dac.o)
-                0x0000000000001618                _dac_ctr_cog
-                0x00000000000016c5                _dac_ctr_res
-                0x00000000000016cb                _dac_ctr
-                0x0000000000001727                _dac_ctr_stop
- .text          0x0000000000001740       0x38 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
-                0x0000000000001740                _ee_getByte
- .text          0x0000000000001778       0x30 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getInt.o)
-                0x0000000000001778                _ee_getInt
- .text          0x00000000000017a8       0x30 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getStr.o)
-                0x00000000000017a8                _ee_getStr
- .text          0x00000000000017d8       0x68 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
-                0x00000000000017d8                _freqout
- .text          0x0000000000001840       0x1c /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
-                0x0000000000001840                _input
- .text          0x000000000000185c       0x1c /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
-                0x000000000000185c                _low
- .text          0x0000000000001878       0x14 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
-                0x0000000000001878                _pause
- .text          0x000000000000188c       0xc4 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
-                0x000000000000188c                _pulse_in
- .text          0x0000000000001950       0xa0 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
-                0x0000000000001950                _pulse_out
- .text          0x00000000000019f0       0x38 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o)
-                0x00000000000019f0                _sd_mount
- .text          0x0000000000001a28       0x18 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(setOutput.o)
-                0x0000000000001a28                _set_output
- .text          0x0000000000001a40      0x1e4 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
-                0x0000000000001a40                _square_wave_cog
-                0x0000000000001b1a                _square_wave_stop
-                0x0000000000001b43                _int_fraction
-                0x0000000000001b6c                _square_wave_setup
-                0x0000000000001bc4                _square_wave
- .text          0x0000000000001c24       0x40 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-                0x0000000000001c24                _timeTicksSetup
- .text          0x0000000000001c64       0x20 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(addfiledriver.o)
-                0x0000000000001c64                _add_driver
- .text          0x0000000000001c84       0x18 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o)
-                0x0000000000001c84                _ee_init
- .text          0x0000000000001c9c       0x18 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(endianSwap.o)
-                0x0000000000001c9c                _endianSwap
- .text          0x0000000000001cb4        0xc /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(getOutput.o)
-                0x0000000000001cb4                _get_output
- .text          0x0000000000001cc0        0xc /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
-                0x0000000000001cc0                _get_state
- .text          0x0000000000001ccc       0x2c /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_init.o)
-                0x0000000000001ccc                _i2c_newbus
- .text          0x0000000000001cf8       0x58 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cexpf.o)
-                0x0000000000001cf8                _cexp
-                0x0000000000001cf8                _cexpf
- .text          0x0000000000001d50      0x280 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_sincosf.o)
-                0x0000000000001f33                ___sincos
-                0x0000000000001f33                ___sincosf
- .text          0x0000000000001fd0      0x1dc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_expf.o)
-                0x0000000000001fd0                _expf
-                0x0000000000001fd0                _exp
- .text          0x00000000000021ac      0x2c4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_rem_pio2f.o)
-                0x00000000000021ac                ___ieee754_rem_pio2f
- .text          0x0000000000002470      0x8bc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_rem_pio2f.o)
-                0x0000000000002470                ___kernel_rem_pio2f
- .text          0x0000000000002d2c       0x84 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_floorf.o)
-                0x0000000000002d2c                _floorf
-                0x0000000000002d2c                _floor
- .text          0x0000000000002db0       0xd8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_scalbnf.o)
-                0x0000000000002db0                _scalbnf
-                0x0000000000002db0                _ldexpf
-                0x0000000000002db0                _ldexp
- .text          0x0000000000002e88      0x370 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
-                0x0000000000002e88                ___addsf3
- .text          0x00000000000031f8      0x200 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
-                0x00000000000031f8                ___divsf3
- .text          0x00000000000033f8       0x58 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(eqsf2.o)
-                0x00000000000033f8                ___nesf2
-                0x00000000000033f8                ___eqsf2
- .text          0x0000000000003450       0x9c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(gesf2.o)
-                0x0000000000003450                ___gtsf2
-                0x0000000000003450                ___gesf2
- .text          0x00000000000034ec       0x9c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(lesf2.o)
-                0x00000000000034ec                ___lesf2
-                0x00000000000034ec                ___ltsf2
- .text          0x0000000000003588      0x240 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
-                0x0000000000003588                ___mulsf3
- .text          0x00000000000037c8      0x390 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
-                0x00000000000037c8                ___subsf3
- .text          0x0000000000003b58       0x4c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
-                0x0000000000003b58                ___fixsfsi
- .text          0x0000000000003ba4       0xb0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
-                0x0000000000003ba4                ___floatsisf
- .text          0x0000000000003c54       0xa4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen.o)
-                0x0000000000003c54                ___fopen_findslot
-                0x0000000000003ca1                _fopen
- .text          0x0000000000003cf8      0x17c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
-                0x0000000000003cf8                ___fopen_driver
-                0x0000000000003de5                _fclose
- .text          0x0000000000003e74      0x120 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fwrite.o)
-                0x0000000000003e74                _fwrite
- .text          0x0000000000003f94       0x50 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(init_io.o)
-                0x0000000000003f94                __InitIO
- .text          0x0000000000003fe4        0x8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(abort.o)
-                0x0000000000003fe4                _abort
- .text          0x0000000000003fec       0x48 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(cogstart.o)
-                0x0000000000003fec                _cogstart
- .text          0x0000000000004034       0x80 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memcpy.o)
-                0x0000000000004034                _memcpy
- .text          0x00000000000040b4       0x9c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memset.o)
-                0x00000000000040b4                _memset
- .text          0x0000000000004150       0x10 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strlen.o)
-                0x0000000000004150                _strlen
- .text          0x0000000000004160       0x84 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strncmp.o)
-                0x0000000000004160                _strncmp
- .text          0x00000000000041e4      0x1c4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(SimpleSerial.o)
- .text          0x00000000000043a8      0x3dc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
-                0x00000000000043f5                _dfs_stdio_errno
-                0x0000000000004487                _mount_complete
-                0x0000000000004505                _dfs_mount_defaults
-                0x0000000000004529                _dfs_resolve_path
- .text          0x0000000000004784       0xe0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(mount.o)
-                0x0000000000004784                _dfs_mount
- .text          0x0000000000004864      0xff4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(dosfs.o)
-                0x0000000000004864                _dfs_setDefaultFileDateTime
-                0x00000000000048a4                _DFS_SetDirEntDateTime
-                0x00000000000048eb                _DFS_SetStartCluster
-                0x0000000000004912                _DFS_GetVolInfo
-                0x0000000000004a80                _DFS_GetFAT
-                0x0000000000004b2c                _DFS_SetFAT
-                0x0000000000004bfb                _DFS_CanonicalToDir
-                0x0000000000004c51                _DFS_GetFreeFAT
-                0x0000000000004c89                _DFS_GetNext
-                0x0000000000004dbd                _DFS_OpenDir
-                0x0000000000004f40                _DFS_GetFreeDirEnt
-                0x000000000000503b                _DFS_OpenFile
-                0x00000000000052ba                _DFS_ReadFile
-                0x0000000000005435                _DFS_Seek
-                0x0000000000005524                _DFS_UnlinkFile
-                0x00000000000055c3                _DFS_WriteFile
- .text          0x0000000000005858      0x128 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(file_io.o)
-                0x0000000000005858                _dfs_use_lock
-                0x0000000000005874                _DFS_InitFileIO
-                0x00000000000058b3                _DFS_ReadSector
-                0x0000000000005922                _DFS_WriteSector
- .text          0x0000000000005980       0x44 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(load_sd_driver.o)
-                0x0000000000005980                _LoadSDDriver
- .text          0x00000000000059c4       0xe0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fflush.o)
-                0x0000000000005a7f                _fflush
- .text          0x0000000000005aa4      0x150 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o)
-                0x0000000000005b4f                __common_malloc
-                0x0000000000005bc3                _hubmalloc
-                0x0000000000005bcf                _malloc
-                0x0000000000005bdb                _free
-                0x0000000000005be7                _hubfree
- .text          0x0000000000005bf4       0x50 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(atoi.o)
-                0x0000000000005bf4                _atoi
-                0x0000000000005bf4                _atol
- .text          0x0000000000005c44        0x8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(div.o)
-                0x0000000000005c44                _ldiv
-                0x0000000000005c44                _div
- .text          0x0000000000005c4c        0xc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sbrk.o)
-                0x0000000000005c4c                _sbrk
-                0x0000000000005c4c                __hubsbrk
-                0x0000000000005c4c                __sbrk
- .text          0x0000000000005c58       0x1c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memcmp.o)
-                0x0000000000005c58                _memcmp
- .text          0x0000000000005c74       0x1c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcat.o)
-                0x0000000000005c74                _strcat
- .text          0x0000000000005c90       0x68 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcmp.o)
-                0x0000000000005c90                _strcmp
- .text          0x0000000000005cf8       0x2c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcpy.o)
-                0x0000000000005cf8                _strcpy
- .text          0x0000000000005d24       0x54 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strncpy.o)
-                0x0000000000005d24                _strncpy
-                0x0000000000005d78                _etext = .
+                0x0000000000000835                _integralTerm
+                0x0000000000000843                _diffTerm
+                0x0000000000000852                _followWall
+                0x0000000000000944                _followLeftWall
+ .text          0x0000000000000954      0x134 cmm/calcPos.o
+                0x0000000000000954                _init
+                0x0000000000000974                _calcPosition
+ .text          0x0000000000000a88        0x8 /tmp/ccTMBIN5.o
+                0x0000000000000a88                _main
+ .text          0x0000000000000a90      0x34c /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+                0x0000000000000a90                _drive_goto
+ .text          0x0000000000000ddc       0x20 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(getticks.o)
+                0x0000000000000ddc                _drive_getTicks
+                0x0000000000000deb                _drive_getTicksCalc
+ .text          0x0000000000000dfc       0x94 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(ramp.o)
+                0x0000000000000dfc                _drive_rampStep
+                0x0000000000000e55                _drive_ramp
+ .text          0x0000000000000e90      0xbe0 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+                0x0000000000000e90                _drive_close
+                0x0000000000000ea3                _drive_setMaxSpeed
+                0x0000000000000ea9                _drive_setRampStep
+                0x0000000000000eaf                _drive_feedback
+                0x0000000000000eb5                _drive_trim
+                0x0000000000000ebb                _drive_com
+                0x0000000000000f09                _interpolation_table_setup
+                0x0000000000001119                _interpolate
+                0x0000000000001228                _encoders
+                0x0000000000001939                _set_drive_speed
+                0x00000000000019b7                _drive_open
+                0x00000000000019d1                _drive_speed
+ .text          0x0000000000001a70       0x2c /home/alexis/dev/robo/lib/Sensor/libping/cmm/libping.a(ping.o)
+                0x0000000000001a70                _ping
+                0x0000000000001a87                _ping_cm
+                0x0000000000001a91                _ping_inches
+ .text          0x0000000000001a9c      0x128 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(dac.o)
+                0x0000000000001a9c                _dac_ctr_cog
+                0x0000000000001b49                _dac_ctr_res
+                0x0000000000001b4f                _dac_ctr
+                0x0000000000001bab                _dac_ctr_stop
+ .text          0x0000000000001bc4       0x38 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
+                0x0000000000001bc4                _ee_getByte
+ .text          0x0000000000001bfc       0x30 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getInt.o)
+                0x0000000000001bfc                _ee_getInt
+ .text          0x0000000000001c2c       0x30 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getStr.o)
+                0x0000000000001c2c                _ee_getStr
+ .text          0x0000000000001c5c       0x68 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(freqout.o)
+                0x0000000000001c5c                _freqout
+ .text          0x0000000000001cc4       0x1c /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(input.o)
+                0x0000000000001cc4                _input
+ .text          0x0000000000001ce0       0x1c /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(low.o)
+                0x0000000000001ce0                _low
+ .text          0x0000000000001cfc       0x14 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pause.o)
+                0x0000000000001cfc                _pause
+ .text          0x0000000000001d10       0xc4 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseIn.o)
+                0x0000000000001d10                _pulse_in
+ .text          0x0000000000001dd4       0xa0 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(pulseOut.o)
+                0x0000000000001dd4                _pulse_out
+ .text          0x0000000000001e74       0x18 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(setOutput.o)
+                0x0000000000001e74                _set_output
+ .text          0x0000000000001e8c      0x1e4 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
+                0x0000000000001e8c                _square_wave_cog
+                0x0000000000001f66                _square_wave_stop
+                0x0000000000001f8f                _int_fraction
+                0x0000000000001fb8                _square_wave_setup
+                0x0000000000002010                _square_wave
+ .text          0x0000000000002070       0x40 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+                0x0000000000002070                _timeTicksSetup
+ .text          0x00000000000020b0       0x18 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_init.o)
+                0x00000000000020b0                _ee_init
+ .text          0x00000000000020c8       0x18 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(endianSwap.o)
+                0x00000000000020c8                _endianSwap
+ .text          0x00000000000020e0        0xc /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(getOutput.o)
+                0x00000000000020e0                _get_output
+ .text          0x00000000000020ec        0xc /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(getState.o)
+                0x00000000000020ec                _get_state
+ .text          0x00000000000020f8       0x2c /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_init.o)
+                0x00000000000020f8                _i2c_newbus
+ .text          0x0000000000002124       0x30 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(print.o)
+                0x0000000000002124                _print
+ .text          0x0000000000002154       0x18 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putStr.o)
+                0x0000000000002154                _putStr
+ .text          0x000000000000216c       0x38 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(putChar.o)
+                0x000000000000216c                _putChar
+ .text          0x00000000000021a4       0x34 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(simpleterm.o)
+                0x00000000000021a4                _simpleterm_open
+                0x00000000000021cf                _simpleterm_pointer
+ .text          0x00000000000021d8      0x154 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosprint.o)
+                0x00000000000021d8                __dosprnt
+ .text          0x000000000000232c       0x84 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_open.o)
+                0x000000000000232c                _serial_open
+ .text          0x00000000000023b0       0xe4 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(serial_rxtx.o)
+                0x0000000000002438                _serial_rxChar
+                0x0000000000002463                _serial_txChar
+ .text          0x0000000000002494       0x70 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosput.o)
+                0x0000000000002494                _SPUTC
+                0x0000000000002499                _SPUTS
+                0x00000000000024ad                _SPUTL
+ .text          0x0000000000002504      0x1e4 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o)
+                0x0000000000002504                _float2string
+ .text          0x00000000000026e8       0x58 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_cexpf.o)
+                0x00000000000026e8                _cexp
+                0x00000000000026e8                _cexpf
+ .text          0x0000000000002740      0x280 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_sincosf.o)
+                0x0000000000002923                ___sincos
+                0x0000000000002923                ___sincosf
+ .text          0x00000000000029c0      0x1dc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_expf.o)
+                0x00000000000029c0                _expf
+                0x00000000000029c0                _exp
+ .text          0x0000000000002b9c      0x2c4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_rem_pio2f.o)
+                0x0000000000002b9c                ___ieee754_rem_pio2f
+ .text          0x0000000000002e60      0x8bc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_rem_pio2f.o)
+                0x0000000000002e60                ___kernel_rem_pio2f
+ .text          0x000000000000371c       0x84 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_floorf.o)
+                0x000000000000371c                _floorf
+                0x000000000000371c                _floor
+ .text          0x00000000000037a0       0xd8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_scalbnf.o)
+                0x00000000000037a0                _scalbnf
+                0x00000000000037a0                _ldexpf
+                0x00000000000037a0                _ldexp
+ .text          0x0000000000003878      0x370 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
+                0x0000000000003878                ___addsf3
+ .text          0x0000000000003be8      0x200 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
+                0x0000000000003be8                ___divsf3
+ .text          0x0000000000003de8       0x58 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(eqsf2.o)
+                0x0000000000003de8                ___nesf2
+                0x0000000000003de8                ___eqsf2
+ .text          0x0000000000003e40       0x9c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(gesf2.o)
+                0x0000000000003e40                ___gtsf2
+                0x0000000000003e40                ___gesf2
+ .text          0x0000000000003edc       0x9c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(lesf2.o)
+                0x0000000000003edc                ___lesf2
+                0x0000000000003edc                ___ltsf2
+ .text          0x0000000000003f78      0x240 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
+                0x0000000000003f78                ___mulsf3
+ .text          0x00000000000041b8      0x390 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
+                0x00000000000041b8                ___subsf3
+ .text          0x0000000000004548       0x4c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
+                0x0000000000004548                ___fixsfsi
+ .text          0x0000000000004594       0x4c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+                0x0000000000004594                ___fixunssfsi
+ .text          0x00000000000045e0       0xb0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+                0x00000000000045e0                ___floatsisf
+ .text          0x0000000000004690       0xa0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
+                0x0000000000004690                ___floatunsisf
+ .text          0x0000000000004730      0x150 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o)
+                0x00000000000047db                __common_malloc
+                0x000000000000484f                _hubmalloc
+                0x000000000000485b                _malloc
+                0x0000000000004867                _free
+                0x0000000000004873                _hubfree
+ .text          0x0000000000004880        0x8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(abort.o)
+                0x0000000000004880                _abort
+ .text          0x0000000000004888        0xc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sbrk.o)
+                0x0000000000004888                _sbrk
+                0x0000000000004888                __hubsbrk
+                0x0000000000004888                __sbrk
+ .text          0x0000000000004894       0x48 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(cogstart.o)
+                0x0000000000004894                _cogstart
+ .text          0x00000000000048dc       0x80 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memcpy.o)
+                0x00000000000048dc                _memcpy
+ .text          0x000000000000495c       0x9c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(memset.o)
+                0x000000000000495c                _memset
+ .text          0x00000000000049f8       0x2c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(strcpy.o)
+                0x00000000000049f8                _strcpy
+                0x0000000000004a24                _etext = .
 
-.cogsys1        0x0000000000000000      0x52c load address 0x0000000000005d78
- .cogsys1       0x0000000000000000      0x52c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sd_driver.o)
-
-.fini           0x00000000000062a4       0x30
+.fini           0x0000000000004a24       0x30
  *(.fini*)
- .fini          0x00000000000062a4       0x1c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
-                0x00000000000062a4                _exit
- .fini          0x00000000000062c0       0x14 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
-                0x00000000000062c2                __exit
-                0x00000000000062c2                __Exit
-                0x00000000000062ce                __ExitHook
+ .fini          0x0000000000004a24       0x1c /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
+                0x0000000000004a24                _exit
+ .fini          0x0000000000004a40       0x14 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+                0x0000000000004a42                __exit
+                0x0000000000004a42                __Exit
+                0x0000000000004a4e                __ExitHook
 
-.hub            0x00000000000062d4      0xc8c
+.hub            0x0000000000004a54      0x8a0
  *(.hubstart)
  *(.hubtext*)
- .hubtext       0x00000000000062d4       0xec /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
-                0x00000000000062d4                _i2c_in
- .hubtext       0x00000000000063c0      0x27c /home/alexis/dev/robotics/libs/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
-                0x0000000000006414                _i2c_start
-                0x0000000000006477                _i2c_stop
-                0x00000000000064b5                _i2c_open
-                0x00000000000064e5                _i2c_writeByte
-                0x0000000000006549                _i2c_readByte
-                0x00000000000065d6                _i2c_writeData
-                0x00000000000065fd                _i2c_readData
-                0x0000000000006629                _i2c_poll
- .hubtext       0x000000000000663c      0x134 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(terminal.o)
-                0x000000000000663c                __term_write
-                0x0000000000006688                __term_read
- .hubtext       0x0000000000006770       0x14 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(file_io.o)
+ .hubtext       0x0000000000004a54       0xec /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_in.o)
+                0x0000000000004a54                _i2c_in
+ .hubtext       0x0000000000004b40      0x27c /home/alexis/dev/robo/lib/Protocol/libsimplei2c/cmm//libsimplei2c.a(simplei2c.o)
+                0x0000000000004b94                _i2c_start
+                0x0000000000004bf7                _i2c_stop
+                0x0000000000004c35                _i2c_open
+                0x0000000000004c65                _i2c_writeByte
+                0x0000000000004cc9                _i2c_readByte
+                0x0000000000004d56                _i2c_writeData
+                0x0000000000004d7d                _i2c_readData
+                0x0000000000004da9                _i2c_poll
  *(.hubdata*)
  *(.hub)
- .hub           0x0000000000006784      0x200 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
-                0x0000000000006784                _dfs_scratch
- .hub           0x0000000000006984        0x8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(file_io.o)
- .hub           0x000000000000698c        0x8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(load_sd_driver.o)
+ .hub           0x0000000000004dbc        0x4 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(simpleterm.o)
+                0x0000000000004dbc                _dport_ptr
  *(.data)
- .data          0x0000000000006994       0x14 cmm/calcPos.o
- .data          0x00000000000069a8       0x44 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(addfiledriver.o)
-                0x00000000000069a8                __driverlist
-                0x00000000000069e8                _DRIVER_LIST_SIZE
- .data          0x00000000000069ec        0x8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_sincosf.o)
- .data          0x00000000000069f4       0x20 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_expf.o)
- .data          0x0000000000006a14      0x398 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_rem_pio2f.o)
- .data          0x0000000000006dac       0x40 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_rem_pio2f.o)
- .data          0x0000000000006dec       0x10 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_scalbnf.o)
- .data          0x0000000000006dfc        0xc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(init_io.o)
- .data          0x0000000000006e08       0x2c /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(SimpleSerial.o)
-                0x0000000000006e08                __SimpleSerialDriver
-                0x0000000000006e2c                __SimpleSerialPrefix
- .data          0x0000000000006e34        0xc /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(serialparam.o)
-                0x0000000000006e34                __baud
-                0x0000000000006e38                __txpin
-                0x0000000000006e3c                __rxpin
- .data          0x0000000000006e40       0x54 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
-                0x0000000000006e64                __cfg_sdspi_config2
-                0x0000000000006e68                __cfg_sdspi_config1
-                0x0000000000006e6c                __FileDriver
- .data          0x0000000000006e94        0x8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(dosfs.o)
-                0x0000000000006e94                _DefaultFileDate
-                0x0000000000006e98                _DefaultFileTime
- .data          0x0000000000006e9c        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sd_driver.o)
-                0x0000000000006e9c                _sd_driver_array
- .data          0x0000000000006ea0       0x10 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o)
-                0x0000000000006ea0                __hub_malloc_heap
-                0x0000000000006ea8                __malloc_heap
- .data          0x0000000000006eb0       0x84 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(ctype.o)
-                0x0000000000006eb0                ___ctype
- .data          0x0000000000006f34        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sbrk.o)
-                0x0000000000006f34                __heap_base
+ .data          0x0000000000004dc0       0x2c cmm/librobo.o
+ .data          0x0000000000004dec        0x8 cmm/calcPos.o
+ .data          0x0000000000004df4       0x28 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+                0x0000000000004df4                _abd_ePinR
+                0x0000000000004df8                _abd_ePinL
+                0x0000000000004dfc                _abd_sPinR
+                0x0000000000004e00                _abd_sPinL
+                0x0000000000004e04                _abd_dsr
+                0x0000000000004e08                _abd_zeroDelay
+                0x0000000000004e0c                _abd_speedLimit
+                0x0000000000004e10                _abd_rampStep
+ .data          0x0000000000004e1c       0x14 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosput.o)
+ .data          0x0000000000004e30       0x18 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(floatToString.o)
+ .data          0x0000000000004e48        0x8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_sincosf.o)
+ .data          0x0000000000004e50       0x20 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_expf.o)
+ .data          0x0000000000004e70      0x398 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(e_rem_pio2f.o)
+ .data          0x0000000000005208       0x40 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(k_rem_pio2f.o)
+ .data          0x0000000000005248       0x10 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libm.a(s_scalbnf.o)
+ .data          0x0000000000005258       0x10 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o)
+                0x0000000000005258                __hub_malloc_heap
+                0x0000000000005260                __malloc_heap
+ .data          0x0000000000005268       0x84 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(ctype.o)
+                0x0000000000005268                ___ctype
+ .data          0x00000000000052ec        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(sbrk.o)
+                0x00000000000052ec                __heap_base
  *(.data*)
- .data.abd_ePinR
-                0x0000000000006f38        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000006f38                _abd_ePinR
- .data.abd_ePinL
-                0x0000000000006f3c        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000006f3c                _abd_ePinL
- .data.abd_sPinR
-                0x0000000000006f40        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000006f40                _abd_sPinR
- .data.abd_sPinL
-                0x0000000000006f44        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000006f44                _abd_sPinL
- .data.abd_dsr  0x0000000000006f48        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000006f48                _abd_dsr
- .data.abd_zeroDelay
-                0x0000000000006f4c        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000006f4c                _abd_zeroDelay
- .data.abd_speedLimit
-                0x0000000000006f50        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x0000000000006f50                _abd_speedLimit
- .data.encoderFeedback
-                0x0000000000006f54        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .data.trimFunction
-                0x0000000000006f58        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x0000000000006f5c                PROVIDE (__C_LOCK, .)
-                0x0000000000006f5c        0x4 LONG 0x0
+                0x00000000000052f0                PROVIDE (__C_LOCK, .)
+                0x00000000000052f0        0x4 LONG 0x0
 
-.ctors          0x0000000000006f60        0xc
+.ctors          0x00000000000052f4        0xc
  *(.ctors*)
- .ctors         0x0000000000006f60        0x4 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
- .ctors         0x0000000000006f64        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(init_io.o)
- .ctors         0x0000000000006f68        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
-                0x0000000000006f68                __environ
-                0x0000000000006f68                __argv
+ .ctors         0x00000000000052f4        0x4 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+ .ctors         0x00000000000052f8        0x4 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(simpleterm.o)
+ .ctors         0x00000000000052fc        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+                0x00000000000052fc                __environ
+                0x00000000000052fc                __argv
 
-.dtors          0x0000000000006f6c        0xc
+.dtors          0x0000000000005300        0x4
  *(.dtors*)
- .dtors         0x0000000000006f6c        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
- .dtors         0x0000000000006f70        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(SimpleSerial.o)
- .dtors         0x0000000000006f74        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+ .dtors         0x0000000000005300        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
 
-.data           0x0000000000006f78        0x0
-                0x0000000000006f78                . = ALIGN (0x4)
+.data           0x0000000000005304        0x0
+                0x0000000000005304                . = ALIGN (0x4)
 
-.bss            0x0000000000006f78     0x103c
-                0x0000000000006f78                PROVIDE (__bss_start, .)
+.bss            0x0000000000005304      0xdf8
+                0x0000000000005304                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x0000000000006f78      0x108 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(dac.o)
- .bss           0x0000000000007080       0x30 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(sddriverconfig.o)
- .bss           0x00000000000070b0      0x114 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
- .bss           0x00000000000071c4       0xa4 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(i2c_init.o)
-                0x00000000000071c4                _st_buscnt
- .bss           0x0000000000007268       0x50 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(init_io.o)
- .bss           0x00000000000072b8       0xa8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(thread.o)
-                0x00000000000072b8                ___napuntil_ptr
- .bss           0x0000000000007360        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
-                0x0000000000007360                _dfs_mountflag
- .bss           0x0000000000007364        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(file_io.o)
-                0x0000000000007364                __sd_mbox_p
- .bss           0x0000000000007368        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o)
+ .bss           0x0000000000005304      0x250 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+                0x0000000000005304                _xbee_setup
+                0x0000000000005308                _abd_record
+                0x000000000000530c                _abd_intTabSetup
+                0x0000000000005310                _abd_eaR
+                0x0000000000005314                _abd_eaL
+                0x0000000000005318                _abd_drca
+                0x000000000000531c                _abd_dlca
+                0x0000000000005320                _abd_ticksR
+                0x0000000000005324                _abd_ticksL
+                0x0000000000005328                _abd_trimticksB
+                0x000000000000532c                _abd_trimticksF
+ .bss           0x0000000000005554      0x108 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(dac.o)
+ .bss           0x000000000000565c      0x114 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(squareWave.o)
+ .bss           0x0000000000005770       0xa4 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(i2c_init.o)
+                0x0000000000005770                _st_buscnt
+ .bss           0x0000000000005814       0x20 /home/alexis/dev/robo/lib/TextDevices/libsimpletext/cmm//libsimpletext.a(dosput.o)
+ .bss           0x0000000000005834        0x4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(malloc.o)
+ .bss           0x0000000000005838       0xa8 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(thread.o)
+                0x0000000000005838                ___napuntil_ptr
  *(.bss*)
- .bss.phsRr     0x000000000000736c        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.phsLr     0x0000000000007370        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.phsR      0x0000000000007374        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.phsL      0x0000000000007378        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.driveR    0x000000000000737c        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.driveL    0x0000000000007380        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.ssiR      0x0000000000007384        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.ssiL      0x0000000000007388        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss._sprOld   0x000000000000738c        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.pcount    0x0000000000007390        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.etpsL     0x0000000000007394        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.etpsR     0x0000000000007398        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.stateR    0x000000000000739c        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.stateL    0x00000000000073a0        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.tiR       0x00000000000073a4        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.tiL       0x00000000000073a8        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.trimticks
-                0x00000000000073ac        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.dca       0x00000000000073b0        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.cntrRval  0x00000000000073b4        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.cntrLval  0x00000000000073b8        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.abd_intTabSetup
-                0x00000000000073bc        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073bc                _abd_intTabSetup
- .bss.abd_eaR   0x00000000000073c0        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073c0                _abd_eaR
- .bss.abd_eaL   0x00000000000073c4        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073c4                _abd_eaL
- .bss.abd_drca  0x00000000000073c8        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073c8                _abd_drca
- .bss.abd_dlca  0x00000000000073cc        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073cc                _abd_dlca
- .bss.abd_ticksR
-                0x00000000000073d0        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073d0                _abd_ticksR
- .bss.abd_ticksL
-                0x00000000000073d4        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073d4                _abd_ticksL
- .bss.abd_trimticksB
-                0x00000000000073d8        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073d8                _abd_trimticksB
- .bss.abd_trimticksF
-                0x00000000000073dc        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000073dc                _abd_trimticksF
- .bss.cog       0x00000000000073e0        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.pwL       0x00000000000073e4        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.pwR       0x00000000000073e8        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.spdL      0x00000000000073ec        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.spdR      0x00000000000073f0        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.r         0x00000000000073f4        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.stack     0x00000000000073f8      0x180 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.speedLprev
-                0x0000000000007578        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
- .bss.speedRprev
-                0x000000000000757c        0x4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
  *(COMMON)
- COMMON         0x0000000000007580        0x8 cmm/librobo.o
-                0x0000000000007580                _totalerror
-                0x0000000000007584                _preverror
- COMMON         0x0000000000007588       0x1c cmm/calcPos.o
-                0x0000000000007588                _rticks
-                0x000000000000758c                _angleTurned
-                0x0000000000007590                _total_distance
-                0x0000000000007594                _lticks
-                0x0000000000007598                _current_pos
- COMMON         0x00000000000075a4      0x7d4 /home/alexis/dev/robotics/libs/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
-                0x00000000000075a4                _abd_speedL
-                0x00000000000075a8                _abd_cntrLidx
-                0x00000000000075ac                _abd_drc
-                0x00000000000075b0                _abd_us
-                0x00000000000075b4                _abd_spdmL
-                0x0000000000007794                __servoPulseReps
-                0x0000000000007798                _abd_cntrRidx
-                0x000000000000779c                _abd_spdrR
-                0x000000000000797c                _abd_iR
-                0x0000000000007980                _abd_pL
-                0x0000000000007984                _abd_trimFL
-                0x0000000000007988                _abd_trimBL
-                0x000000000000798c                _abd_speedR
-                0x0000000000007990                _abd_trimBR
-                0x0000000000007994                _abd_edR
-                0x0000000000007998                _abd_elCntR
-                0x000000000000799c                _abd_edL
-                0x00000000000079a0                _abd_pR
-                0x00000000000079a4                _abd_trimFR
-                0x00000000000079a8                _abd_elCntL
-                0x00000000000079ac                _abd_iL
-                0x00000000000079b0                _abd_spdmR
-                0x0000000000007b90                _abd_spdrL
-                0x0000000000007d70                _abd_dlc
-                0x0000000000007d74                _abd_eeAddr
- COMMON         0x0000000000007d78        0x8 /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
-                0x0000000000007d78                _st_eeprom
-                0x0000000000007d7c                _st_eeInitFlag
- COMMON         0x0000000000007d80       0x1c /home/alexis/dev/robotics/libs/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
-                0x0000000000007d80                _st_iodt
-                0x0000000000007d84                _us
-                0x0000000000007d88                _st_usTicks
-                0x0000000000007d8c                _ms
-                0x0000000000007d90                _st_timeout
-                0x0000000000007d94                _st_pauseTicks
-                0x0000000000007d98                _st_msTicks
- COMMON         0x0000000000007d9c      0x1a4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(fopen_intern.o)
-                0x0000000000007d9c                ___stdio_lock
-                0x0000000000007da0                ___files
- COMMON         0x0000000000007f40       0x74 /opt/parallax/lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles/libc.a(FileDriver.o)
-                0x0000000000007f40                _dfs_volinfo
-                0x0000000000007f74                _dfs_currdir
-                0x0000000000007fb4                PROVIDE (__bss_end, .)
+ COMMON         0x00000000000058e0        0x8 cmm/librobo.o
+                0x00000000000058e0                _totalerror
+                0x00000000000058e4                _preverror
+ COMMON         0x00000000000058e8       0x1c cmm/calcPos.o
+                0x00000000000058e8                _rticks
+                0x00000000000058ec                _angleTurned
+                0x00000000000058f0                _total_distance
+                0x00000000000058f4                _lticks
+                0x00000000000058f8                _current_pos
+ COMMON         0x0000000000005904       0x2c /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(goto.o)
+                0x0000000000005904                _abd_speedL
+                0x0000000000005908                _abd_drc
+                0x000000000000590c                __servoPulseReps
+                0x0000000000005910                _abd_iR
+                0x0000000000005914                _abd_pL
+                0x0000000000005918                _abd_speedR
+                0x000000000000591c                _abd_edR
+                0x0000000000005920                _abd_edL
+                0x0000000000005924                _abd_pR
+                0x0000000000005928                _abd_iL
+                0x000000000000592c                _abd_dlc
+ COMMON         0x0000000000005930      0x7a8 /home/alexis/dev/robo/lib/Robotics/ActivityBot/libabdrive/cmm/libabdrive.a(abdrive.o)
+                0x0000000000005930                _abd_cntrLidx
+                0x0000000000005934                _abd_us
+                0x0000000000005938                _abd_spdmL
+                0x0000000000005b18                _abd_cntrRidx
+                0x0000000000005b1c                _abd_spdrR
+                0x0000000000005cfc                _abd_trimFL
+                0x0000000000005d00                _abd_trimBL
+                0x0000000000005d04                _abd_trimBR
+                0x0000000000005d08                _abd_elCntR
+                0x0000000000005d0c                _abd_trimFR
+                0x0000000000005d10                _abd_elCntL
+                0x0000000000005d14                _abd_spdmR
+                0x0000000000005ef4                _abd_spdrL
+                0x00000000000060d4                _abd_eeAddr
+ COMMON         0x00000000000060d8        0x8 /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(eeprom_getByte.o)
+                0x00000000000060d8                _st_eeprom
+                0x00000000000060dc                _st_eeInitFlag
+ COMMON         0x00000000000060e0       0x1c /home/alexis/dev/robo/lib/Utility/libsimpletools/cmm//libsimpletools.a(timeTicks.o)
+                0x00000000000060e0                _st_iodt
+                0x00000000000060e4                _us
+                0x00000000000060e8                _st_usTicks
+                0x00000000000060ec                _ms
+                0x00000000000060f0                _st_timeout
+                0x00000000000060f4                _st_pauseTicks
+                0x00000000000060f8                _st_msTicks
+                0x00000000000060fc                PROVIDE (__bss_end, .)
 
-.hub_heap       0x0000000000007fb4        0x4
-                0x0000000000007fb8                . = (. + 0x4)
- *fill*         0x0000000000007fb4        0x4 00
-                0x0000000000007fb4                ___hub_heap_start = ADDR (.hub_heap)
+.hub_heap       0x00000000000060fc        0x4
+                0x0000000000006100                . = (. + 0x4)
+ *fill*         0x00000000000060fc        0x4 00
+                0x00000000000060fc                ___hub_heap_start = ADDR (.hub_heap)
 
 .drivers
  *(.drivers)
                 0x0000000000000020                __load_start_kernel = LOADADDR (.lmmkernel)
-                0x0000000000006f60                ___CTOR_LIST__ = ADDR (.ctors)
-                0x0000000000006f6c                ___DTOR_LIST__ = ADDR (.dtors)
+                0x00000000000052f4                ___CTOR_LIST__ = ADDR (.ctors)
+                0x0000000000005300                ___DTOR_LIST__ = ADDR (.dtors)
 
 .hash
  *(.hash)
@@ -1071,7 +857,7 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
 .debug_sfnames
  *(.debug_sfnames .zdebug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x120
+.debug_aranges  0x0000000000000000      0x160
  *(.debug_aranges .zdebug_aranges)
  .debug_aranges
                 0x0000000000000000       0x20 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
@@ -1090,12 +876,16 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .debug_aranges
                 0x00000000000000e0       0x20 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
  .debug_aranges
-                0x0000000000000100       0x20 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+                0x0000000000000100       0x20 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+ .debug_aranges
+                0x0000000000000120       0x20 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_aranges
+                0x0000000000000140       0x20 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
 
 .debug_pubnames
  *(.debug_pubnames .zdebug_pubnames)
 
-.debug_info     0x0000000000000000     0x1e02
+.debug_info     0x0000000000000000     0x235f
  *(.debug_info .gnu.linkonce.wi.* .zdebug_info)
  .debug_info    0x0000000000000000      0x3db /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
  .debug_info    0x00000000000003db      0x3b4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
@@ -1105,9 +895,11 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .debug_info    0x0000000000001099      0x41b /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
  .debug_info    0x00000000000014b4      0x3dd /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
  .debug_info    0x0000000000001891      0x2a2 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
- .debug_info    0x0000000000001b33      0x2cf /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_info    0x0000000000001b33      0x296 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+ .debug_info    0x0000000000001dc9      0x2cf /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_info    0x0000000000002098      0x2c7 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
 
-.debug_abbrev   0x0000000000000000      0x80c
+.debug_abbrev   0x0000000000000000      0x9c6
  *(.debug_abbrev .zdebug_abbrev)
  .debug_abbrev  0x0000000000000000       0xeb /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
  .debug_abbrev  0x00000000000000eb       0xe9 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
@@ -1117,9 +909,11 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .debug_abbrev  0x0000000000000468       0xf0 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
  .debug_abbrev  0x0000000000000558       0xeb /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
  .debug_abbrev  0x0000000000000643       0xdc /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
- .debug_abbrev  0x000000000000071f       0xed /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_abbrev  0x000000000000071f       0xcd /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+ .debug_abbrev  0x00000000000007ec       0xed /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_abbrev  0x00000000000008d9       0xed /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
 
-.debug_line     0x0000000000000000      0xb4c
+.debug_line     0x0000000000000000      0xcbf
  *(.debug_line .zdebug_line)
  .debug_line    0x0000000000000000      0x276 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
  .debug_line    0x0000000000000276      0x11b /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
@@ -1129,9 +923,11 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .debug_line    0x0000000000000627      0x129 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
  .debug_line    0x0000000000000750      0x28d /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
  .debug_line    0x00000000000009dd       0xaa /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
- .debug_line    0x0000000000000a87       0xc5 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_line    0x0000000000000a87       0xad /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+ .debug_line    0x0000000000000b34       0xc5 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_line    0x0000000000000bf9       0xc6 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
 
-.debug_frame    0x0000000000000000      0x15c
+.debug_frame    0x0000000000000000      0x1a4
  *(.debug_frame .zdebug_frame)
  .debug_frame   0x0000000000000000       0x24 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
  .debug_frame   0x0000000000000024       0x30 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
@@ -1141,12 +937,14 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .debug_frame   0x00000000000000c0       0x30 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
  .debug_frame   0x00000000000000f0       0x24 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
  .debug_frame   0x0000000000000114       0x24 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
- .debug_frame   0x0000000000000138       0x24 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_frame   0x0000000000000138       0x24 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+ .debug_frame   0x000000000000015c       0x24 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_frame   0x0000000000000180       0x24 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
 
 .debug_str
  *(.debug_str .zdebug_str)
 
-.debug_loc      0x0000000000000000     0x1bd4
+.debug_loc      0x0000000000000000     0x1d98
  *(.debug_loc .zdebug_loc)
  .debug_loc     0x0000000000000000      0x6f4 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
  .debug_loc     0x00000000000006f4      0x4d1 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
@@ -1156,7 +954,9 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
  .debug_loc     0x0000000000000e1c      0x560 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
  .debug_loc     0x000000000000137c      0x6b5 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
  .debug_loc     0x0000000000001a31       0xa9 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
- .debug_loc     0x0000000000001ada       0xfa /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_loc     0x0000000000001ada       0xbf /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)
+ .debug_loc     0x0000000000001b99       0xfa /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatsisf.o)
+ .debug_loc     0x0000000000001c93      0x105 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(floatunsisf.o)
 
 .debug_macinfo
  *(.debug_macinfo .zdebug_macinfo)
@@ -1176,11 +976,11 @@ LOAD /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
                 0x00000000000007f4                PROVIDE (phsb, PHSB)
                 0x00000000000007f8                PROVIDE (vcfg, VCFG)
                 0x00000000000007fc                PROVIDE (vscl, VSCL)
-                0x0000000000007fc4                PROVIDE (__hub_end, (ADDR (.hub_heap) + 0x10))
+                0x000000000000610c                PROVIDE (__hub_end, (ADDR (.hub_heap) + 0x10))
                 0x0000000000008000                PROVIDE (__stack_end, 0x8000)
 OUTPUT(cmm/1.elf elf32-propeller)
 
-.debug_ranges   0x0000000000000000      0x318
+.debug_ranges   0x0000000000000000      0x350
  .debug_ranges  0x0000000000000000       0x78 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(addsf3.o)
  .debug_ranges  0x0000000000000078       0x58 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(divsf3.o)
  .debug_ranges  0x00000000000000d0       0x48 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(eqsf2.o)
@@ -1189,5 +989,4 @@ OUTPUT(cmm/1.elf elf32-propeller)
  .debug_ranges  0x00000000000001e8       0x78 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(mulsf3.o)
  .debug_ranges  0x0000000000000260       0x80 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(subsf3.o)
  .debug_ranges  0x00000000000002e0       0x38 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixsfsi.o)
-                0x0000000000005d78                PROVIDE (__load_start_cogsys1, LOADADDR (.cogsys1))
-                0x00000000000062a4                PROVIDE (__load_stop_cogsys1, (LOADADDR (.cogsys1) + SIZEOF (.cogsys1)))
+ .debug_ranges  0x0000000000000318       0x38 /opt/parallax/lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/libgcc.a(fixunssfsi.o)

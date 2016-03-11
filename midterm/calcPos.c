@@ -71,19 +71,4 @@ void calcPosition(){
 
 }
 
-//write position to SD card
-//this takes a lot of memory
-//11.5KB when we only have 32KB for the sd driver
-//probably shouldn't be using an sd card like this
-void printPosition() {  
-	sd_mount(22, 23, 24, 25);
-	FILE* fp = fopen("POS.TXT", "w");
-	fwrite(&current_pos, sizeof(current_pos), 1, fp);
-	//total_distance = sqrt(current_pos.x * current_pos.x +current_pos.y * current_pos.y);
-	//fwrite(&total_distance, sizeof(total_distance), 1, fp);
-	//print("distacne %d \n", total_distance);
-	//angleTurned = atan(current_pos.x/current_pos.y) * 57.296;//current_pos.theta * 57.29578;
-	//fwrite(&angleTurned, sizeof(angleTurned), 1, fp);
-	fclose(fp); 
-}
 	

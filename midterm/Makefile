@@ -1,6 +1,6 @@
 
 PARALLAX_FOLDER=/opt/parallax
-SIMPLE_LIBRARY=${HOME}/dev/robotics/libs
+SIMPLE_LIBRARY=${HOME}/dev/robo/lib
 PORT=/dev/ttyUSB0
 
 PROPGCC=${PARALLAX_FOLDER}/bin/propeller-elf-gcc

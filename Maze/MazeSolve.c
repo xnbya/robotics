@@ -13,23 +13,23 @@
 #define FRONTTHRESHOLD 20 // CHANGE LATER for front and side
 #define SIDETHRESHOLD 20
 /*
-    (0,4) (1,4) (2,4) (3,4)    
+    (0,3) (1,3) (2,3) (3,3)    
       ---  --- --- --- 
-(0,4)|                |
 (0,3)|                |
 (0,2)|                |
 (0,1)|                |
-(0,0)|   | --- --- ---
+(0,0)|                |
+     |   | --- --- ---
       ---
 */
 
 bool horizontalWalls[MAZEROWS+1][MAZECOLUMNS];
 bool verticalWalls[MAZEROWS][MAZECOLUMNS+1];
 
-int robotRow = 0,robotColumn = 0; // current position of robot in grid  ( Need to update at the end of move_forward func) 
+int robotRow = 0 -1 ,robotColumn = 0; // (row -1 for star cell) current position of robot in grid  ( Need to update at the end of move_forward func) 
 int roboDirection = NORTH; // current Direction
 int values[MAZEROWS][MAZECOLUMNS];
-int targetRow = 5;
+int targetRow = 3;
 int targetColumn = 3;
 
 const int neighbourCells[4][2]= {

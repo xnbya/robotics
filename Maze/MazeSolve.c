@@ -3,7 +3,7 @@
 #include "abdrive.h"
 #include "stdbool.h"
 
-#define MAZEROWS 5
+#define MAZEROWS 4
 #define MAZECOLUMNS 4
  //roboDirection
 #define NORTH 0
@@ -13,14 +13,14 @@
 #define FRONTTHRESHOLD 20 // CHANGE LATER for front and side
 #define SIDETHRESHOLD 20
 /*
-    (0,5) (1,5) (2,5) (3,5)    
+    (0,4) (1,4) (2,4) (3,4)    
       ---  --- --- --- 
-(0,5)|                |
 (0,4)|                |
 (0,3)|                |
 (0,2)|                |
-(0,1)|   | --- --- ---
-(0,0) ---
+(0,1)|                |
+(0,0)|   | --- --- ---
+      ---
 */
 
 bool horizontalWalls[MAZEROWS+1][MAZECOLUMNS];

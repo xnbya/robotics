@@ -1,6 +1,6 @@
 
 PARALLAX_FOLDER=/opt/parallax
-SIMPLE_LIBRARY=${HOME}/dev/robotics/lib
+SIMPLE_LIBRARY=${HOME}/dev/robotics/libs
 PORT=/dev/ttyUSB0
 
 PROPGCC=${PARALLAX_FOLDER}/bin/propeller-elf-gcc
@@ -9,7 +9,7 @@ PROPDUMP=${PARALLAX_FOLDER}/bin/propeller-elf-objdump
 LIBS=-I . -L . -I ${SIMPLE_LIBRARY}/Utility/libsimpletools -L ${SIMPLE_LIBRARY}/Utility/libsimpletools/cmm/ -I ${SIMPLE_LIBRARY}/TextDevices/libsimpletext -L ${SIMPLE_LIBRARY}/TextDevices/libsimpletext/cmm/ -I ${SIMPLE_LIBRARY}/Protocol/libsimplei2c -L ${SIMPLE_LIBRARY}/Protocol/libsimplei2c/cmm/ -I ${SIMPLE_LIBRARY}/Robotics/ActivityBot/libabdrive -L ${SIMPLE_LIBRARY}/Robotics/ActivityBot/libabdrive/cmm -I ${SIMPLE_LIBRARY}/TextDevices/libfdserial -L ${SIMPLE_LIBRARY}/TextDevices/libfdserial/cmm -I ${SIMPLE_LIBRARY}/Sensor/libping -L ${SIMPLE_LIBRARY}/Sensor/libping/cmm -I ${SIMPLE_LIBRARY}/Motor/libservo -L ${SIMPLE_LIBRARY}/Motor/libservo/cmm
 # LIBS=-I . -L . -I ${SIMPLE_LIBRARY}/**/* -L ${SIMPLE_LIBRARY}/**/*/cmm
 
-CFLAGS= -no-pie -mcmm -fno-exceptions -Wl,-gc-sections,-Map=map.txt -m32bit-doubles -std=c99 -Os -Wall
+CFLAGS= -mcmm -fno-exceptions -Wl,-gc-sections,-Map=map.txt -m32bit-doubles -std=c99 -Os -Wall
 
 compileCalcPos: calcPos.c
 	$(PROPGCC) $(LIBS) $(CFLAGS) -c calcPos.c -o cmm/calcPos.o

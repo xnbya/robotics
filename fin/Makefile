@@ -27,7 +27,7 @@ loadProg: ${FILENAME}.c
 	mkdir cmm
 	make compileLibrobo
 	make compileCalcPos
-	$(PROPGCC) $(LIBS) -o cmm/${FILENAME}.elf $(CFLAGS) cmm/librobo.o cmm/calcPos.o ${FILENAME}.c -lsimplei2c -labdrive -lfdserial -lping -lservo -lsimpletools -lsimpletext -lsimplei2c -lsimpletools -lsimpletext -lsimpletools -lm 
+	$(PROPGCC) $(LIBS) -o cmm/${FILENAME}.elf $(CFLAGS) cmm/librobo.o ${FILENAME}.c -lsimplei2c -labdrive -lfdserial -lping -lservo -lsimpletools -lsimpletext -lsimplei2c -lsimpletools -lsimpletext -lsimpletools -lm 
 	${PARALLAX_FOLDER}/bin/propeller-elf-size cmm/${FILENAME}.elf
 	$(PROPLOAD) -e -r -t cmm/${FILENAME}.elf
 	#$(PROPDUMP) -h cmm/${FILENAME}.elf

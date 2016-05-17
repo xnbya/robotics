@@ -1,7 +1,7 @@
 //Robot lib
-//Alexis Enston - week6
+//Alexis Enston - maze
 #include "abdrive.h"
-//#include "simpletools.h"
+#include "simpletools.h"
 #include "ping.h"
 //#include "calcPos.h"
 
@@ -12,7 +12,9 @@
 #define DIFFGAIN 30
 #define TARGET 5
 #define CHANGEDIV 40
-#define SQUARE 156
+#define SQUARE 120
+#define SSPEED 180
+
 
 //detect if something is dead in front, return 1 if it is
 int stopDead(int distance) {
@@ -58,6 +60,65 @@ int diffTerm(int lerror) {
 	return diff * DIFFGAIN;
 }
 
+//GOTO in a straight line ish
+void dgoto(int gTicks) {
+	int l_encoder = 0, r_encoder = 0;
+	//read ticks travelled
+	drive_getTicks(&l_encoder,&r_encoder);
+	drive_speed(SSPEED, SSPEED);
+	int startL = l_encoder;
+	int startR = r_encoder;
+	int dist;
+	while(gTicks > (l_encoder - startL)) {
+		drive_getTicks(&l_encoder,&r_encoder);
+		dist = ping_cm(8);
+		if(dist < (SQUARE/9)) 
+			break;
+	}
+	drive_speed(0,0);
+}
+
+int x,y,dir,*grid;
+
+void addNum(int num) {
+	dir+=16;
+	dir=dir%4;
+	if(dir == 0)
+		grid[((y*2+2)*8)+x*2+1]=num;
+	if(dir == 1)
+		grid[((y*2+1)*8)+x*2+2]=num;
+	if(dir==2)
+		grid[((y*2+0)*8)+x*2+1]=num;
+	if(dir==3)
+		grid[((y*2+1)*8)+x*2+0]=num;
+}
+
+
+void addPass() {
+	addNum(7);
+}
+
+void addWall() {
+	addNum(8);
+}
+
+void checkWallIR() {
+	//CLOSED WALLS FROM IR
+	int ldst = ldist();
+	if(ldst<15) {
+		dir--;
+		addWall();
+		dir++;
+	}
+	int rdst = rdist();
+	if (rdst<15) {
+		dir++;
+		addWall();
+		dir--;
+	}
+}
+
+
 void followWall(int distance) {
 	//init();
 	totalerror = 0;
@@ -73,14 +134,19 @@ void followWall(int distance) {
 
 
 	int followL = 1;
-	int dir = 0;
+	dir = 0;
 	int incdistl = 0;
 	int incdistr = 0;
-	int *grid = calloc(100, sizeof(int));
-	int x = 0;
-	int y = 0;
+	grid = calloc(100, sizeof(int));
+	x = 0;
+	y = 0;
 	int px = 0;
 	int py = 0;
+
+	grid[((y*2+1)*8)+x*2+1]++;
+
+	//SIMULATOR
+	drive_goto(SQUARE/3, SQUARE/3);
 
 	//init();
 
@@ -91,8 +157,10 @@ void followWall(int distance) {
 		//
 		//stop and turn
 		int fdist = ping_cm(8);
-		//print("%d fdist \n", fdist);
-		if(fdist < 20 && fdist != 0) {
+		
+		print("%d fdist \n", fdist);
+		if(fdist < 30 && fdist != 0) {
+
 			printf("ROTATE \n");
 			drive_speed(0,0);
 
@@ -104,55 +172,73 @@ void followWall(int distance) {
 
 			int ldst = ldist();
 			int rdst = rdist();
-			if(ldst > 15) { //turn left
+			printf("ldist %d rdist %d \n", ldst, rdst);
+			//rotate until found place to go
+			//try clockwise or anticlockwise based on IR, double check with ultrasonic
+			int clockwise = 1;
+			int doa180 = 0;
+			if (ldst > 15) {
+				clockwise = -1;
+			}
+			if (rdst > 15) {
+				int doa180 = 1;
+			}
+			while(fdist<30) {
+				//CALIBRATE LOCATION FROM WALL
+				//need to be SQUARE/3 away
+				addWall();
+				drive_goto(fdist*3 - SQUARE/3, fdist*3 - SQUARE/3);
+				drive_goto(25 * clockwise, -26 * clockwise);
+				dir += clockwise;
+				fdist = ping_cm(8);
+				if(doa180 && (fdist < 30)) {
+					addWall();
+					doa180 = 0;
+					drive_goto(51, -51);
+					dir += 2;
+					fdist = ping_cm(8);
+					clockwise = 1;
+				}
+			}
+		} 
+
+		else {
+
+			//open left wall
+			
+			int ldst = ldist();
+			printf("LDIST %d \n", ldst);
+			if(ldst > 15) {
 				drive_goto(-25,26);
 				dir--;
-				followL = 0;
-			}
-			else {
-				if (rdst > 15) { //turn right
+				//CHECK WITH ULTRASONIC
+				fdist = ping_cm(8);
+				if(fdist<30) {
 					drive_goto(25, -26);
 					dir++;
-					followL = 1;
-				}
-				else {
-					//do a 180
-					drive_goto(51, -51);
-					dir+=2;
 				}
 			}
+			
 		}
 
-		//open left wall
-		/*
-		int ldst = ldist();
-		if(ldst > 10) {
-			//go forward
-			drive_speed(0,0);
-			drive_goto(SQUARE/2,SQUARE/2);
-			drive_goto(-25,26);
-			dir--;
-			drive_goto(SQUARE/2, SQUARE/2);
-		}
-		*/
+
 
 		int l_encoder = 0, r_encoder = 0;
 
 		//read ticks travelled
 		drive_getTicks(&l_encoder,&r_encoder);
 
-		printf("#L,%d,R,%d \n", l_encoder, r_encoder);
-
-
-		if(l_encoder - incdistl > SQUARE) {
+		printf("DIR %d \n", dir);
+		//LOCATION
+		if(1) {
 			//print("in squ x %d y %d \n", x, y, dir);
-			int rotat= (r_encoder - incdistr) - (l_encoder - incdistl);
-			rotat = rotat / 40;
-			dir += rotat;
-
-			incdistl = l_encoder;
-
+			//int rotat= (r_encoder - incdistr) - (l_encoder - incdistl);
+			//rotat = rotat / 40;
+			//dir += rotat;
+			addPass();
+			dir = dir + 16;
 			dir = dir % 4;
+
 			if(dir == 0)
 				y++;
 			if(dir == 1)
@@ -163,61 +249,23 @@ void followWall(int distance) {
 				x--;
 			//grid[(x*2+1)*8+(y*2)+1] = 5;
 			//grid[(x+px)*8+(y+py)] = 1;
-			grid[(x*8)+y]++;
-			px = x;
-			py = y;
 			//print maze
-			for(int iy = 0; iy < 10; iy++) {
-				for(int ix = 0; ix < 8; ix++) {
-				//print("%d ", grid[iy*8+ix]);
+			grid[((y*2+1)*8)+x*2+1]=1;
+			for(int iy = 10; iy >= 0; iy--) {
+				for(int ix = 0; ix < 9; ix++) {
+				print("%d ", grid[iy*8+ix]);
 				}
-				//print("\n");
+				print("\n");
 			}
 		}
-			
-		if(followL) 
-			dist = ldist();
-		else
-			dist = rdist();
 
-		int rd = rdist();
 
-		//print("ldist %d Rdist = %d \n", dist, rd);
-		lerror = dist - TARGET;
-		change = PROPGAIN * lerror; //proportional term
-		//print("propgain = %d \n", change);
-		change += integralTerm(dist);
-		//print("int = %d \n", integralTerm(dist));
-		int diff = diffTerm(lerror);
-		//print("diff term = %d \n", diff);
-		change += diff;
-		//print("diff term = %d \n", diff);
-		//change += diff;
+		dgoto(SQUARE);
+		checkWallIR();
 
-		change = change / CHANGEDIV;
-		//print("change %d \n", change);
-
-		if(!followL) {
-			change = -change;
-		}
-
-		if(change > MAXCHANGE) {
-			change = MAXCHANGE;
-		}
-		if(change < -MAXCHANGE) {
-			change = -MAXCHANGE;
-		}
-
-		//change = 10;
-		//change = 0;
-		//
-		//speeds[cloop] = change;
-		//cloop++;
-		drive_speed(STARTSPEED - change, STARTSPEED + change);
-		//
-		//drive_speed(20,20);
-		pause(50);
-
+		//if(y==4 && x==3) {
+		//	break;
+		//}
 		//print maze
 		
 	}

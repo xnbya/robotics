@@ -26,7 +26,7 @@ const int nearbyWalls[4][2] = {
 
 int xPos = 0;
 int yPos = 0;
-int targetx = 3;
+int targetx = 4;
 int targety = 3;
 int heading = NORTH;
 

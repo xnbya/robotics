@@ -90,87 +90,12 @@ void addKnownWalls(){
   for(l = 1; l < 4; l++){
     horizontalWalls[0][l] = true;
   }
+}
   
                                
-}
 
-void printmaze() 
-{
-        for(int i = 0;i < 2*ROW+1;i++)
-        {
-            for(int j = 0;j < 2*COLUMN+1;j++)
-            {
-                //Add Horizontal Walls
-                if(i%2 == 1 && j%2 == 1)
-                {
-                    if(horizontalWalls[i/2][j/2] == true)
-                    {
-                        print("  __");
-                    }
-                    else
-                    {
-                        print("    ");
-                    }
-                }
 
-                //Add Vertical Walls
-                if(i%2 == 1 && j%2 == 0)
-                {
-                    if(verticalWalls[i/2][j/2] == true)
-                    {
-                        print("|");
-                    }
-                    else
-                    {
-                        print(" ");
-                    }
-                }
 
-                //Add Flood Fill Values
-                if(i%2 == 1 && j%2== 1)
-                {
-                    if((i-1)/2 == xPos && (j-1)/2 == yPos)
-                    {
-                        if(heading == NORTH)
-                        {
-                            print(" v ");
-                        }
-                        else if(heading == EAST)
-                        {
-                            print(" > ");
-                        }
-                        else if(heading == SOUTH)
-                        {
-                            print(" ^ ");
-                        }
-                        else if(heading == WEST)
-                        {
-                            print(" < ");
-                        }
-                    }
-                    else
-                    {
-                        int value = cellValues[(i-1)/2][(j-1)/2];
-                        if(value >= 100)
-                        {
-			  print("%d",value);
-                        }
-                        else
-                        {
-                            print(" ");
-                            print("%d",value);
-                        }
-                        if(value < 10)
-                        {
-                            print(" ");
-                        }
-                    }
-                }
-            }
-            print("\n");
-        }
-        print("\n");
-}
 
 void addWalls(int direction){
   switch(direction){
@@ -350,11 +275,11 @@ int main(){
     turnToBestDir();
     forwardmove();
     fillMaze();
-    printmaze();
+    //printmaze();
    }while(cellValues[xPos][yPos] != 0);
    buildWalls();
    fillMaze();
-   printmaze();
+   //printmaze();
 
    
   

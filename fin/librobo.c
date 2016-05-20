@@ -13,7 +13,8 @@
 #define TARGET 5
 #define CHANGEDIV 40
 #define SQUARE 120
-#define SSPEED 180
+#define SSPEED 160
+#define FSPACE 50
 
 
 //detect if something is dead in front, return 1 if it is
@@ -72,8 +73,18 @@ void dgoto(int gTicks) {
 	while(gTicks > (l_encoder - startL)) {
 		drive_getTicks(&l_encoder,&r_encoder);
 		dist = ping_cm(8);
-		if(dist < (SQUARE/9)) 
+		if(dist < (FSPACE/3)) 
 			break;
+		int ldst = ldist();
+		int rdst = rdist();
+		//printf("ldist %d rdist %d \n", ldst, rdst);
+		int change = 0;
+		if(rdst<2)
+			change-=5;
+		if(ldst<2)
+			change+=5;
+		drive_speed(SSPEED+change,SSPEED+change);
+
 	}
 	drive_speed(0,0);
 }
@@ -92,8 +103,79 @@ void addNum(int num) {
 	if(dir==3)
 		grid[((y*2+1)*8)+x*2+0]=num;
 }
+//shortest dddpath
+typedef struct {
+	int x;
+	int y;
+	int dist;
+	int prev;
+} Square;
+
+int *pathdir;
+Square *path;
 
 
+int addSquare(int ix, int iy, int prev, int count, int max) {
+	//check isnt already there
+	int i;
+	for(i=0; i<count; i++) {
+		if(path[i].x == ix && path[i].y == iy)
+			return max;
+	}
+	path[count].x=ix;
+	path[count].y=iy;
+	path[count].dist=path[prev].dist+1;
+	path[count].prev=prev;
+	return path[count].dist;
+}
+
+
+
+int shortest() {
+	//start at 0,0
+	path = calloc(18, sizeof(Square));
+	path[0].x=0;
+	path[0].y=0;
+	path[0].dist=0;
+	path[0].prev=0;
+	int count = 1;
+	while(1) {
+		int i;
+		int max=100;
+		for(i=0; i<count; i++) {	
+			if(max>path[i].dist) {
+				//max = path[i].dist+1;
+				int x = path[i].x;
+				int y = path[i].y;
+				if(
+						grid[((y*2+2)*8)+x*2+1]==7)
+					max = addSquare(x,y+1,i,count, max);
+
+				if(
+						grid[((y*2+1)*8)+x*2+2]==7) 
+					max = addSquare(x+1,y,i,count, max);
+
+				if(
+						grid[((y*2+0)*8)+x*2+1]==7) 
+					max = addSquare(x,y-1,i,count, max);
+				if(
+						grid[((y*2+1)*8)+x*2+0]==7) 
+					max = addSquare(x-1,y-1,i,count, max);
+			}
+		}
+		printf("x %d y %d dist %d \n", path[count].x, path[count].y, path[count].dist);
+		if(path[count].x == 3 && path[count].y == 4)
+			break;
+		count++;
+	}
+	return count;
+}	
+
+
+
+
+
+		
 void addPass() {
 	addNum(7);
 }
@@ -117,6 +199,22 @@ void checkWallIR() {
 		dir--;
 	}
 }
+
+int rotatecount = 0;
+
+//rotate x right angles clockwise
+void rotate(int count) {
+	if(rotatecount%4==0) {
+		drive_goto(26, -26);
+	}
+	else if(rotatecount%2==0) {
+		drive_goto(25, -26);
+		}
+	else {
+		drive_goto(26, -25);
+	}
+	rotatecount++;	
+}	
 
 
 void followWall(int distance) {
@@ -146,7 +244,8 @@ void followWall(int distance) {
 	grid[((y*2+1)*8)+x*2+1]++;
 
 	//SIMULATOR
-	drive_goto(SQUARE/3, SQUARE/3);
+	dgoto(SQUARE/3);
+
 
 	//init();
 
@@ -181,17 +280,18 @@ void followWall(int distance) {
 				clockwise = -1;
 			}
 			if (rdst > 15) {
-				int doa180 = 1;
+				doa180 = 1;
 			}
 			while(fdist<30) {
 				//CALIBRATE LOCATION FROM WALL
-				//need to be SQUARE/3 away
+				//need to be FSPACE away
 				addWall();
-				drive_goto(fdist*3 - SQUARE/3, fdist*3 - SQUARE/3);
+				drive_goto(fdist*3 - FSPACE, fdist*3 - FSPACE);
 				drive_goto(25 * clockwise, -26 * clockwise);
 				dir += clockwise;
 				fdist = ping_cm(8);
 				if(doa180 && (fdist < 30)) {
+					drive_goto(fdist*3 - FSPACE, fdist*3 - FSPACE);
 					addWall();
 					doa180 = 0;
 					drive_goto(51, -51);
@@ -214,6 +314,7 @@ void followWall(int distance) {
 				//CHECK WITH ULTRASONIC
 				fdist = ping_cm(8);
 				if(fdist<30) {
+					drive_goto(fdist*3 - FSPACE, fdist*3 - FSPACE);
 					drive_goto(25, -26);
 					dir++;
 				}
@@ -266,9 +367,80 @@ void followWall(int distance) {
 		//if(y==4 && x==3) {
 		//	break;
 		//}
-		//print maze
+		//print maze();
+
+		//phase 2
+		if(y==0 && x==0) {
+			//dikjstras
+			int shpath = shortest();
+			int squares[20];
+			//go back from end
+			for(int i=path[shpath].dist; i >= 0; i--){
+				printf("adding %d  x %d y %d \n", shpath, path[shpath].x, path[shpath].y);
+				squares[i]=shpath;
+				shpath = path[shpath].prev;
+			}
+			dir = 0;
+			drive_goto(51,-51);
+			//drive	
+			for(int i = 0; i < 15; i++) {
+				printf("square x %d y %d \n", path[squares[i]].x, path[squares[i]].y);
+				int dirg = 0;
+				if(path[squares[i+1]].x > path[squares[i]].x)
+					dirg=1;
+				if(path[squares[i+1]].x < path[squares[i]].x)
+					dirg=3;
+				if(path[squares[i+1]].y > path[squares[i]].y)
+					dirg=0;
+				if(path[squares[i+1]].y < path[squares[i]].y)
+					dirg=2;
+
+				//calc rotation
+				printf("dir %d dirg %d \n", dir, dirg);
+				dirg = dirg - dir;
+				dirg+=16;
+				dirg=dirg%4;
+				if(dirg==1) {
+					drive_goto(25, -26);
+					dir++;
+				}
+				if(dirg==2) {
+					drive_goto(-51, 51);
+					dir+=2;
+				}
+				if(dirg==3) {
+					drive_goto(-25, 26);
+					dir+=3;
+				}
+				dir = dir%4;
+				dgoto(SQUARE);
+				fdist =	ping_cm(8);
+				if(fdist<30) {
+					drive_goto(fdist*3 - FSPACE, fdist*3 - FSPACE); 
+				}
+
+				if(path[squares[i+1]].x == 4 && path[squares[i+1]].y==3) 
+				{
+					drive_speed(0,0);
+					sleep(100);
+				}
+
+
+
+
+			}
+			drive_speed(0,0);
+			sleep(100);
+				
+		}
 		
 	}
+
+	//Shortest path
+	
+
+
+
 //	printPosition();
 //	stop and turn
 	//stop

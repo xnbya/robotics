@@ -13,9 +13,11 @@
 #define TARGET 5
 #define CHANGEDIV 40
 #define SQUARE 120
-#define SSPEED 160
+#define SSPEED 60
 #define FSPACE 50
-
+#define DGOTOCHANGE 20
+#define LTHRESH 18
+#define RTHRESH 18
 
 //detect if something is dead in front, return 1 if it is
 int stopDead(int distance) {
@@ -77,14 +79,36 @@ void dgoto(int gTicks) {
 			break;
 		int ldst = ldist();
 		int rdst = rdist();
-		//printf("ldist %d rdist %d \n", ldst, rdst);
+		printf("ldist %d rdist %d \n", ldst, rdst);
 		int change = 0;
-		if(rdst<2)
-			change-=5;
-		if(ldst<2)
-			change+=5;
-		drive_speed(SSPEED+change,SSPEED+change);
+		if(rdst<RTHRESH/2)
+		       change+=RTHRESH/2-rdst;
+		if(ldst<20 && ldst>(LTHRESH/2))
+			change+=(LTHRESH-ldst)*3;
+		if(ldst<LTHRESH/2)
+		        change-=LTHRESH-ldst;
+		if(rdst<RTHRESH && rdst>(RTHRESH/3))
+			change-=RTHRESH-rdst;
+		//drive_speed(SSPEED+change,SSPEED+change);
+		//CALC distance from left from both sensors
 
+
+		//lerror = dist - TARGET;
+		//print("propgain = %d \n", change);
+		//
+		print("change %d \n", change);
+		change=change/3;
+
+		if(change > MAXCHANGE) {
+			change = MAXCHANGE;
+		}
+		if(change < -MAXCHANGE) {
+			change = -MAXCHANGE;
+		}
+
+		//change = 10;
+		//change = 0;
+		drive_speed(STARTSPEED - change, STARTSPEED + change);
 	}
 	drive_speed(0,0);
 }
@@ -244,7 +268,7 @@ void followWall(int distance) {
 	grid[((y*2+1)*8)+x*2+1]++;
 
 	//SIMULATOR
-	dgoto(SQUARE/3);
+	//dgoto(SQUARE/3);
 
 
 	//init();
@@ -276,10 +300,10 @@ void followWall(int distance) {
 			//try clockwise or anticlockwise based on IR, double check with ultrasonic
 			int clockwise = 1;
 			int doa180 = 0;
-			if (ldst > 15) {
+			if (ldst > LTHRESH) {
 				clockwise = -1;
 			}
-			if (rdst > 15) {
+			if (rdst > RTHRESH) {
 				doa180 = 1;
 			}
 			while(fdist<30) {
@@ -308,7 +332,7 @@ void followWall(int distance) {
 			
 			int ldst = ldist();
 			printf("LDIST %d \n", ldst);
-			if(ldst > 15) {
+			if(ldst > LTHRESH) {
 				drive_goto(-25,26);
 				dir--;
 				//CHECK WITH ULTRASONIC
@@ -382,6 +406,15 @@ void followWall(int distance) {
 			}
 			dir = 0;
 			drive_goto(51,-51);
+				//blink
+				//
+				for(int z = 0; z < 3; z++) {
+					high(26);
+					pause(100);
+					low(26);
+					pause(100);
+				}
+				pause(1000);
 			//drive	
 			for(int i = 0; i < 15; i++) {
 				printf("square x %d y %d \n", path[squares[i]].x, path[squares[i]].y);
@@ -422,7 +455,15 @@ void followWall(int distance) {
 				if(path[squares[i+1]].x == 4 && path[squares[i+1]].y==3) 
 				{
 					drive_speed(0,0);
-					sleep(100);
+					pause(100);
+				//blink
+				//
+				for(int z = 0; z < 1000; z++) {
+					high(26);
+					pause(100);
+					low(26);
+					pause(100);
+				}
 				}
 
 

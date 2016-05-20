@@ -34,7 +34,7 @@ int heading = NORTH;
 
 
 //approximate distance from ir freq response
-int ledDist(int irOut, int irIn) {
+int irLedDist(int irOut, int irIn) {
 	int dist = 0;
 	int i;
 	for(i = 0; i < 20; i += 1) {
@@ -49,26 +49,26 @@ int ledDist(int irOut, int irIn) {
 
 
 
-int ldist() {
-	return ledDist(11,10);
+int leftDist() {
+	return irLedDist(11,10);
 }
 
-int rdist() {
-	return ledDist(1,2);
+int rightDist() {
+	return irLedDist(1,2);
 }
 
-int frontdist() {
+int frontDist() {
   return ping_cm(8);
 }
 
 
 
 void forwardmove(){
-  drive_goto(130,130);
+  drive_goto(135,135);
   xPos += nearbyCells[heading][0];
   yPos += nearbyCells[heading][1];
 
-  print("in square %d,%d, dir %d\n",xPos,yPos, heading);
+  //print("in square %d,%d, dir %d\n",xPos,yPos, heading);
 }
 
 
@@ -115,17 +115,17 @@ void addWalls(int direction){
 }
 
 void buildWalls(){
-  if(frontdist() < 25){
+  if(frontDist() < 25){
     addWalls(heading);
-    print("front wall detected\n");
+    //print("front wall detected\n");
   }
-  if(rdist() < 20){
+  if(rightDist() < 20){
     addWalls((heading+1)%4);
-    print("wall on the right detected\n");
+   // print("wall on the right detected\n");
   }
-  if(ldist() < 20){
+  if(leftDist() < 20){
     addWalls((heading+3)%4);
-    print("wall on the left detected\n");
+   // print("wall on the left detected\n");
   }
 }
 
@@ -207,36 +207,36 @@ int findDirection(){
 
 void turnToBestDir(){
   int direction = findDirection();
-  print("desired direction %d\n",direction);
+  //print("desired direction %d\n",direction);
   int difference = heading - direction;
-  print("difference is %d\n",difference);
+  //print("difference is %d\n",difference);
   switch(difference){
   case 0:
-    print("not turning\n");
+    //print("not turning\n");
     break;
   case 1:
     drive_goto(-25,26);
-    print("turning left\n");
+    //print("turning left\n");
     break;
   case 2:
     drive_goto(51,-51);
-    print("turning 180\n");
+    //print("turning 180\n");
     break;
   case 3:
     drive_goto(25,-26);
-    print("turning right\n");
+    //print("turning right\n");
     break;
   case -1:
     drive_goto(25,-26);
-    print("turning right\n");
+    //print("turning right\n");
     break;
   case -2:
     drive_goto(51,-51);
-    print("turning 180\n");
+    //print("turning 180\n");
     break;
   case -3:
     drive_goto(-25,26);
-    print("turning left\n");
+    //print("turning left\n");
     break;
   }
     
@@ -264,7 +264,7 @@ void turnToBestDir(){
 
 
 
-int main(){
+void phaseTwo(){
   //calibrate();
   
    addKnownWalls();
@@ -280,9 +280,5 @@ int main(){
    buildWalls();
    fillMaze();
    //printmaze();
-
-   
   
 }
-    
-

@@ -64,7 +64,7 @@ int frontdist() {
 
 
 void forwardmove(){
-  drive_goto(135,135);
+  drive_goto(130,130);
   xPos += nearbyCells[heading][0];
   yPos += nearbyCells[heading][1];
 
@@ -90,13 +90,11 @@ void addKnownWalls(){
   for(l = 1; l < 4; l++){
     horizontalWalls[0][l] = true;
   }
-  horizontalWalls[-1][0] = true;
-  verticalWalls[0][1] = true;
-
 }
-
-
   
+                               
+
+
 
 
 void addWalls(int direction){
@@ -121,11 +119,11 @@ void buildWalls(){
     addWalls(heading);
     print("front wall detected\n");
   }
-  if(rdist() < 10){
+  if(rdist() < 20){
     addWalls((heading+1)%4);
     print("wall on the right detected\n");
   }
-  if(ldist() < 10){
+  if(ldist() < 20){
     addWalls((heading+3)%4);
     print("wall on the left detected\n");
   }
@@ -147,7 +145,6 @@ void fillMaze(){
 
   while(continueSolv){
     continueSolv = false;
-
     for(i = 0; i < ROW; i++){
       for(j = 0; j < COLUMN; j++){
 	if(cellValues[i][j] < 255){
@@ -162,7 +159,7 @@ void fillMaze(){
 	    if(k == NORTH || k == SOUTH){
 	      wallExists = horizontalWalls[nearbyWallRow][nearbyWallColumn];
 	    }
-	    else{
+	    else if(k == EAST || k == WEST){
 	      wallExists = verticalWalls[nearbyWallRow][nearbyWallColumn];
 	    }
 
@@ -212,22 +209,53 @@ void turnToBestDir(){
   int direction = findDirection();
   print("desired direction %d\n",direction);
   int difference = heading - direction;
-  
-  if(difference == 0){
+  print("difference is %d\n",difference);
+  switch(difference){
+  case 0:
+    print("not turning\n");
+    break;
+  case 1:
+    drive_goto(-25,26);
+    print("turning left\n");
+    break;
+  case 2:
+    drive_goto(51,-51);
+    print("turning 180\n");
+    break;
+  case 3:
+    drive_goto(25,-26);
+    print("turning right\n");
+    break;
+  case -1:
+    drive_goto(25,-26);
+    print("turning right\n");
+    break;
+  case -2:
+    drive_goto(51,-51);
+    print("turning 180\n");
+    break;
+  case -3:
+    drive_goto(-25,26);
+    print("turning left\n");
+    break;
+  }
+    
+  /*(if(difference == 0){
     print("not turning\n");
   }
   else if(difference == 1 || difference == -3){
-    drive_goto(-25,26);
-    print("Turning Left\n");
-  }
-  else if(difference = 3 || difference == -1){
+      drive_goto(-25,26);
+      print("Turning Left\n");
+    }
+  else if(difference = -1 || difference == 3){
     drive_goto(25,-26);
     print("Turning Right\n");
-  }
-  else if(difference == 2 || difference == -2){
+    }
+  else{
+    if(difference == 2 || difference == -2){
     drive_goto(51,-51);
     print("Turning 180\n");
-  }
+    }}*/
   heading = direction;
   
 }
@@ -238,15 +266,23 @@ void turnToBestDir(){
 
 int main(){
   //calibrate();
-  addKnownWalls();
   
-  do{
+   addKnownWalls();
+   
+   do{
     buildWalls();
     fillMaze();
     turnToBestDir();
     forwardmove();
-  }while(cellValues[xPos][yPos] != 0);
+    fillMaze();
+    //printmaze();
+   }while(cellValues[xPos][yPos] != 0);
+   buildWalls();
+   fillMaze();
+   //printmaze();
 
+   
+  
 }
     
 

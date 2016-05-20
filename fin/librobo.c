@@ -82,11 +82,11 @@ void dgoto(int gTicks) {
 		printf("ldist %d rdist %d \n", ldst, rdst);
 		int change = 0;
 		if(rdst<RTHRESH/2)
-		       change+=RTHRESH/2-rdst;
+			change+=RTHRESH/2-rdst;
 		if(ldst<20 && ldst>(LTHRESH/2))
 			change+=(LTHRESH-ldst)*3;
 		if(ldst<LTHRESH/2)
-		        change-=LTHRESH-ldst;
+			change-=LTHRESH-ldst;
 		if(rdst<RTHRESH && rdst>(RTHRESH/3))
 			change-=RTHRESH-rdst;
 		//drive_speed(SSPEED+change,SSPEED+change);
@@ -199,7 +199,7 @@ int shortest() {
 
 
 
-		
+
 void addPass() {
 	addNum(7);
 }
@@ -233,7 +233,7 @@ void rotate(int count) {
 	}
 	else if(rotatecount%2==0) {
 		drive_goto(25, -26);
-		}
+	}
 	else {
 		drive_goto(26, -25);
 	}
@@ -247,10 +247,10 @@ void followWall(int distance) {
 	int dist, change, lerror;
 	//calibrate robot
 	/*int totaldist = 0;
-	for(int i = 0; i < 10; i++) { 
-		dist += ledDist(irOut, irIn, led);
-		pause(50);
-	}*/
+	  for(int i = 0; i < 10; i++) { 
+	  dist += ledDist(irOut, irIn, led);
+	  pause(50);
+	  }*/
 	//distance = totaldist / 10;
 	//print("dist = %d \n", totaldist);
 
@@ -280,7 +280,7 @@ void followWall(int distance) {
 		//
 		//stop and turn
 		int fdist = ping_cm(8);
-		
+
 		print("%d fdist \n", fdist);
 		if(fdist < 30 && fdist != 0) {
 
@@ -329,7 +329,7 @@ void followWall(int distance) {
 		else {
 
 			//open left wall
-			
+
 			int ldst = ldist();
 			printf("LDIST %d \n", ldst);
 			if(ldst > LTHRESH) {
@@ -343,7 +343,7 @@ void followWall(int distance) {
 					dir++;
 				}
 			}
-			
+
 		}
 
 
@@ -378,7 +378,7 @@ void followWall(int distance) {
 			grid[((y*2+1)*8)+x*2+1]=1;
 			for(int iy = 10; iy >= 0; iy--) {
 				for(int ix = 0; ix < 9; ix++) {
-				print("%d ", grid[iy*8+ix]);
+					print("%d ", grid[iy*8+ix]);
 				}
 				print("\n");
 			}
@@ -406,15 +406,15 @@ void followWall(int distance) {
 			}
 			dir = 0;
 			drive_goto(51,-51);
-				//blink
-				//
-				for(int z = 0; z < 3; z++) {
-					high(26);
-					pause(100);
-					low(26);
-					pause(100);
-				}
-				pause(1000);
+			//blink
+			//
+			for(int z = 0; z < 3; z++) {
+				high(26);
+				pause(100);
+				low(26);
+				pause(100);
+			}
+			pause(1000);
 			//drive	
 			for(int i = 0; i < 15; i++) {
 				printf("square x %d y %d \n", path[squares[i]].x, path[squares[i]].y);
@@ -456,14 +456,14 @@ void followWall(int distance) {
 				{
 					drive_speed(0,0);
 					pause(100);
-				//blink
-				//
-				for(int z = 0; z < 1000; z++) {
-					high(26);
-					pause(100);
-					low(26);
-					pause(100);
-				}
+					//blink
+					//
+					for(int z = 0; z < 1000; z++) {
+						high(26);
+						pause(100);
+						low(26);
+						pause(100);
+					}
 				}
 
 
@@ -472,18 +472,18 @@ void followWall(int distance) {
 			}
 			drive_speed(0,0);
 			sleep(100);
-				
+
 		}
-		
+
 	}
 
 	//Shortest path
-	
 
 
 
-//	printPosition();
-//	stop and turn
+
+	//	printPosition();
+	//	stop and turn
 	//stop
 	drive_speed(0,0);
 }

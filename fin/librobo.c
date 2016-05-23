@@ -4,6 +4,7 @@
 #include "simpletools.h"
 #include "ping.h"
 #include <math.h>
+#include "abcalibrate.h"
 
 #define MAXCHANGE 20
 #define SQUARE 120
@@ -20,6 +21,17 @@
 #define ARCL 120
 #define ARCS 69 
 
+void calibrate(){
+	
+  cal_servoPins(12, 13);
+  cal_encoderPins(14, 15);
+ 
+  high(26);
+  high(27);
+  cal_activityBot();
+  low(26);
+  low(27);
+}
 
 //approximate distance from ir freq response
 int ledDist(int irOut, int irIn) {
